@@ -1,0 +1,170 @@
+header{
+
+    nav{
+        background-color: $white;
+        .logo-area{
+            a{
+                display: block;
+                img{
+                    width: 75%;
+                    height: 93%;
+                    object-fit: contain;
+                }
+            }
+        }
+        .nav-area{
+            // border: 2px solid red;
+            display: flex;
+            ul{
+                width: 100%;
+                // border: 2px solid red;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                @include flexible(
+                    flex, space-between, center, row
+                );
+               li{
+                // border: 2px solid red;
+                height: 100%;
+                width: calc(100%/9);
+                @include flexible(flex,center,center,row);
+                a{
+                    // border: 2px solid red;
+                    @include textFont(
+                        $f_size:16px, 
+                        $f_color:$black,
+                        $text_decaration:none,
+                        $text_weight:700
+                    );
+                    background-position: -100%;
+                    background-image: linear-gradient(
+                        to right,
+                        $main-color,
+                        $main-color 50%,
+                        #000 50%
+                    );
+                    background-size: 200% 100%;
+                    background-position: -100%;
+                    display: inline-block;
+                    padding: 5px 0;
+                    position: relative;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    transition: all 0.3s ease-in-out;
+                    &::before{
+                        content: '';
+                        background: $main-color;
+                        display: block;
+                        position: absolute;
+                        bottom: -3px;
+                        left: 0;
+                        width: 0;
+                        height: 3px;
+                        transition: all 0.3s ease-in-out;
+                    }
+                    &:hover{
+                        background-position: 0;
+                    }
+                    &:hover::before{
+                        width: 100%;
+                    }
+                }
+                &:nth-child(2){
+                    background: rgba(255, 144, 48, 0.3);
+                    
+                }
+               }
+            }
+        }
+        .nav-right-side{
+            // border: 2px solid red;
+            @include flexible(flex,flex-end,center,row);
+            .phone-area{
+                display: none;
+                
+                color: #616161;
+                span{
+                    font-size: 24px;
+                    font-weight: 400;
+                }
+                @media (min-width:1700px) {
+                    @include flexible(flex,center,center,row);
+                }
+            }
+            .border-area{
+                line-height: 84px;
+                display: block;
+                position: relative;
+                vertical-align: top;
+                margin: 0px 10px 0px 12px;
+                .line{
+                    border-bottom-color: #e0e0e0;
+                    border-bottom-style: solid;
+                    height: 48px;
+                    border-bottom-width: 73px;
+                    width: 1px;
+                }
+            }
+            .search-area{
+                @include flexible(flex,center,center,row);
+                details{
+                    summary{
+                        font-size: 24px;
+                        color: #616161;
+                        &::marker{
+                            content: '';
+                        }
+                    }
+                }
+            }
+            .language-area{
+                width: 10%;
+                @include flexible(flex,center,center,row);
+                details{
+                    summary{
+                        // border: 2px solid red;
+                        // width: 70%;
+                        &::marker{
+                            content: '';
+                        }
+                        img{
+                            width: 40px;
+                            height: 40px;
+                            object-fit: contain;
+                        }
+                    }
+                }
+            }
+            .calculator{
+                // border: 2px solid red;
+                background-color: $main-color;
+                a{
+                    text-decoration: none;
+                    display: flex;
+                    width: 180px;
+                    height: 84px;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-left: 15px;
+                    font-size: 16px !important;
+                    font-weight: 600;
+                    letter-spacing: 0.25px;
+                    line-height: 84px !important;
+                    text-transform: none;
+                    color: #000000;
+                    border-radius: 0px;
+                    background: linear-gradient(0deg, $black, $black) no-repeat right bottom / 0 var(--bg-h);
+                    transition: background-size 350ms;
+                    --bg-h: 100%;
+                    &:where(:hover, :focus-visible) {
+                        background-size: 100% var(--bg-h);
+                        background-position-x: left;
+                        color: $white;
+                    }
+                    
+                }
+            }
+        }
+    }
+}

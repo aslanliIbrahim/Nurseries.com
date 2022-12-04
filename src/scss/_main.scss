@@ -15,7 +15,7 @@ header{
         .nav-area{
             // border: 2px solid red;
             display: flex;
-            ul{
+            .main-nav{
                 width: 100%;
                 // border: 2px solid red;
                 margin: 0;
@@ -24,13 +24,20 @@ header{
                 @include flexible(
                     flex, space-between, center, row
                 );
-               li{
+               .main-li{
                 // border: 2px solid red;
+                position: relative;
                 height: 100%;
                 width: calc(100%/9);
                 @include flexible(flex,center,center,row);
-                a{
-                    // border: 2px solid red;
+                .main-a{
+                    
+                    @include flexible(
+                        inline-flex,
+                        center,
+                        center,
+                        row
+                    );
                     @include textFont(
                         $f_size:16px, 
                         $f_color:$black,
@@ -72,7 +79,83 @@ header{
                 }
                 &:nth-child(2){
                     background: rgba(255, 144, 48, 0.3);
-                    
+                    &:hover{
+                        .sub-menu-nav-one{
+                            height: auto;
+                            opacity: 1;
+                            visibility: visible;
+                            z-index: 2;
+                            transform: rotateX(0) translateZ(0);
+                            transition: transform 0.6s 0.2s cubic-bezier(.19,1,.22,1), opacity 0.1s 0.2s, visibility 0.1s 0.2s;
+                            .sub-img-area{
+                                background:url("../img/main-image/megamenu_1-2.webp") no-repeat;
+                                background-size: cover;
+                                background-position: center;
+
+                            }
+                            .sub-menu-ul{
+                                // display: flex;
+                                // flex-direction: row;
+                                // flex-wrap: wrap;
+                                // column-count: 3;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: stretch;
+                                align-content: stretch;
+                                justify-content: space-around;
+                                width: 100%;
+                                height: 500px;
+                                // column-count: 3;
+                                background: url("../img/main-image/map_transparent_dark.png");
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-color: white;
+                                margin: 0;
+                                padding: 0;
+                                li{
+                                    list-style: none;
+                                    width: 100%;
+                                    text-align: left;
+                                    position: relative;
+                                    &::before{
+                                        content: "";
+                                        display: block;
+                                        position: absolute;
+                                        bottom: 0;
+                                        left: 16px;
+                                        height: 1px;
+                                        background-color: $white-a;
+                                        width: calc(100% - 32px);
+                                    }
+                                    a{
+                                        color: $black;
+                                        font-size: 18px;
+                                        font-weight: 700;
+                                        letter-spacing: 0.25px;
+                                        text-decoration: none;
+                                        text-transform: none;
+                                        backface-visibility: hidden;
+                                        padding: 8px 24px;      
+                                        display: inline-flex;                      
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .sub-menu-nav-one{
+                    position: absolute;
+                    width: 1200px;
+                    max-width: 1200px;
+                    // height: 1000px;
+                    margin-left: -220px;
+                    top: 83px;
+                    left: 0;
+                    // border: 2px solid red;
+                    background-color: $white-a;
+                    opacity: 0;
+                    visibility: hidden;
                 }
                }
             }
@@ -168,7 +251,6 @@ header{
         }
     }
 }
-
 
 footer{
     color: $white;

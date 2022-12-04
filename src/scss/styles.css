@@ -19,7 +19,7 @@ header nav .nav-area {
   display: flex;
 }
 
-header nav .nav-area ul {
+header nav .nav-area .main-nav {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -39,7 +39,8 @@ header nav .nav-area ul {
           flex-direction: row;
 }
 
-header nav .nav-area ul li {
+header nav .nav-area .main-nav .main-li {
+  position: relative;
   height: 100%;
   width: calc(100%/9);
   display: -webkit-box;
@@ -57,7 +58,20 @@ header nav .nav-area ul li {
           flex-direction: row;
 }
 
-header nav .nav-area ul li a {
+header nav .nav-area .main-nav .main-li .main-a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   font-size: 16px;
   font-weight: 700;
   color: #212121FF;
@@ -77,7 +91,7 @@ header nav .nav-area ul li a {
   transition: all 0.3s ease-in-out;
 }
 
-header nav .nav-area ul li a::before {
+header nav .nav-area .main-nav .main-li .main-a::before {
   content: '';
   background: #FF9030FF;
   display: block;
@@ -90,16 +104,105 @@ header nav .nav-area ul li a::before {
   transition: all 0.3s ease-in-out;
 }
 
-header nav .nav-area ul li a:hover {
+header nav .nav-area .main-nav .main-li .main-a:hover {
   background-position: 0;
 }
 
-header nav .nav-area ul li a:hover::before {
+header nav .nav-area .main-nav .main-li .main-a:hover::before {
   width: 100%;
 }
 
-header nav .nav-area ul li:nth-child(2) {
+header nav .nav-area .main-nav .main-li:nth-child(2) {
   background: rgba(255, 144, 48, 0.3);
+}
+
+header nav .nav-area .main-nav .main-li:nth-child(2):hover .sub-menu-nav-one {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+  -webkit-transform: rotateX(0) translateZ(0);
+          transform: rotateX(0) translateZ(0);
+  -webkit-transition: opacity 0.1s 0.2s, visibility 0.1s 0.2s, -webkit-transform 0.6s 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 0.1s 0.2s, visibility 0.1s 0.2s, -webkit-transform 0.6s 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 0.6s 0.2s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.1s 0.2s, visibility 0.1s 0.2s;
+  transition: transform 0.6s 0.2s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.1s 0.2s, visibility 0.1s 0.2s, -webkit-transform 0.6s 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+header nav .nav-area .main-nav .main-li:nth-child(2):hover .sub-menu-nav-one .sub-img-area {
+  background: url("../img/main-image/megamenu_1-2.webp") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header nav .nav-area .main-nav .main-li:nth-child(2):hover .sub-menu-nav-one .sub-menu-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  height: 500px;
+  background: url("../img/main-image/map_transparent_dark.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+header nav .nav-area .main-nav .main-li:nth-child(2):hover .sub-menu-nav-one .sub-menu-ul li {
+  list-style: none;
+  width: 100%;
+  text-align: left;
+  position: relative;
+}
+
+header nav .nav-area .main-nav .main-li:nth-child(2):hover .sub-menu-nav-one .sub-menu-ul li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+  height: 1px;
+  background-color: #bdbdbd;
+  width: calc(100% - 32px);
+}
+
+header nav .nav-area .main-nav .main-li:nth-child(2):hover .sub-menu-nav-one .sub-menu-ul li a {
+  color: #212121FF;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.25px;
+  text-decoration: none;
+  text-transform: none;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  padding: 8px 24px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+header nav .nav-area .main-nav .main-li .sub-menu-nav-one {
+  position: absolute;
+  width: 1200px;
+  max-width: 1200px;
+  margin-left: -220px;
+  top: 83px;
+  left: 0;
+  background-color: #bdbdbd;
+  opacity: 0;
+  visibility: hidden;
 }
 
 header nav .nav-right-side {

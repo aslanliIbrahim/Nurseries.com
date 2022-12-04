@@ -168,3 +168,156 @@ header{
         }
     }
 }
+
+
+footer{
+    color: $white;
+    background-color: $black;
+    .footer-up{
+        padding-top: 96px;
+        padding-bottom: 32px;
+        
+    .footer-img-side{
+        img{
+            max-width: 300px;
+            object-fit: contain;
+        }
+        p{
+            font-size: 14px;
+            line-height: 28px;
+        }
+    }
+    .footer-contact{
+        // border: 1px solid red;
+        h2{
+            text-transform: none;
+            font-weight: 700;
+            letter-spacing: 0;
+            font-size: 20px;
+            margin-bottom: 32px;
+            position: relative;
+            &::before{
+                
+                content: "";
+                background-color: $main-color;
+                position: absolute;
+                bottom: -4px;
+                left: 0;
+                display: block;
+                height: 2px;
+                // background-color: #e0e0e0;
+                width: 24px;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                bottom: -4px;
+                left: 26px;
+                display: block;
+                height: 2px;
+                background-color: #e0e0e0;
+                width: 36px;
+            }
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li{
+                @include flexible($flex:flex);
+                padding: 5px 0;
+                // padding-left: 2rem;
+                i{
+                    color:$main-color;
+                    margin-top: -2px;
+                    margin-right: 8px;
+                }
+                a{
+                    color: $white-a;
+                    font-size: 16px;
+                    line-height: 32px;
+                    letter-spacing: 0.5px;
+                    font-weight: 700;
+                    transition: 300ms ease-out;
+                    text-decoration: none;
+                    &:hover{
+                        color: $white;
+                    }
+                }
+            }
+        }
+        .icons-area{
+            padding-top: 10px;
+            display: flex;
+            justify-content: flex-start;
+            a{
+                text-decoration: none;
+                letter-spacing: 0.5px;
+                color: $white-a;
+                transition: 300ms auto ease-out;
+                font-size: 20px;
+                line-height: 36px;
+                display: inline-flex;
+                width: 40px;
+                height: 36px;
+                align-items: center;
+                justify-content: flex-start;
+                text-align: center;
+                &:hover{
+                    color: $white;
+                }
+            }
+        }
+        .footer-right{
+            @media (min-width:1200px) {
+                column-count: 3;
+            }
+        }
+    }
+    }
+    .footer-down{
+        background-color: black;
+        padding-top: 22px;
+        padding-bottom: 16px;
+        padding-left: 72px;
+        padding-right: 90px;
+        .wrap-copyright{
+            span{
+                text-align: left;
+                font-weight: 600;
+                color: $white-a;
+            }
+            strong{
+                color: $white-a;
+            }
+            .legal{
+                a{
+                    line-height: 32px;
+                    letter-spacing: 0.5px;
+                    color: $white-a;
+                    text-decoration: none;
+                    transition: 300ms auto ease-out;
+                    font-size: 16px;
+                    &:hover{
+                        color: white;
+                    }
+                }
+            }
+        }
+        .wrap-signature{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            a{
+                font-size: 16px;
+                color: $white-a;
+                text-decoration: none;
+                transition: 300ms auto ease-out;
+                &:hover{
+                    color: $white;
+                }
+            }
+
+        }
+    }
+}

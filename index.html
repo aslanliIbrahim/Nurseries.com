@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/owl-caruesel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./src/owl-caruesel/owl.theme.default.min.css   ">
     <link rel="stylesheet" href="./src/scss/styles.css">
     <title>Main page</title>
 </head>
@@ -303,6 +305,66 @@
     </header>
 
     <main>
+        <section id="main-one">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="owl-carousel">
+                        <div class="caruesel-content">
+                            <div class="caruesel-img-side">
+                                <img src="./src/img/main-image/slide-1.jpg" alt="">
+                            </div>
+                            <div class="caruesel-title">
+                                <h2>
+                                    60 Years Of experience
+                                </h2>
+                                <p>
+                                    In prodducing fruit trees
+                                </p>
+                            </div>
+                        </div>
+                        <div class="caruesel-content">
+                            <div class="caruesel-img-side">
+                                <img src="./src/img/main-image/slide-1.jpg" alt="">
+                            </div>
+                            <div class="caruesel-title">
+                                <h2>
+                                    60 Years Of experience
+                                </h2>
+                                <p>
+                                    In prodducing fruit trees
+                                </p>
+                            </div>
+                        </div>
+                        <div class="caruesel-content">
+                            <div class="caruesel-img-side">
+                                <img src="./src/img/main-image/slide-1.jpg" alt="">
+                            </div>
+                            <div class="caruesel-title">
+                                <h2>
+                                    60 Years Of experience
+                                </h2>
+                                <p>
+                                    In prodducing fruit trees
+                                </p>
+                            </div>
+                        </div>
+                        <div class="caruesel-content">
+                            <div class="caruesel-img-side">
+                                <img src="./src/img/main-image/slide-1.jpg" alt="">
+                            </div>
+                            <div class="caruesel-title">
+                                <h2>
+                                    60 Years Of experience
+                                </h2>
+                                <p>
+                                    In prodducing fruit trees
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -558,6 +620,18 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="./src/js/owl-js/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items:1,
+                dots:false,
+                nav:true 
+            });
+        });
+    </script>
 </body>
 
 </html>

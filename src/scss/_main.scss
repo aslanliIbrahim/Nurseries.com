@@ -388,6 +388,14 @@ main{
             height: 100%;
             .caruesel-img-side{
                 position: relative;
+                   
+                img{
+                    width: 100%;
+                    max-width: 100%;
+                    object-fit: contain;
+                }
+            }
+            .animation-class{
                 animation: createBox 10s infinite;
                 @keyframes createBox {
                     // from {
@@ -399,24 +407,22 @@ main{
                     // }
                     0%{
                         transform: scale(1);
+                        overflow: hidden;
                     }
                     25%{
                         transform: scale(1.02);
+                        overflow: hidden;
                     }
                     50%{
                         transform: scale(1.03);
+                        overflow: hidden;
                     }
                     100%{
                         transform: scale(1.04);
+                        overflow: hidden;
                     }
 
                   }
-                img{
-                    width: 100%;
-                    max-width: 100%;
-                    object-fit: contain;
-                }
-
             }
             .caruesel-title{
                 position: absolute;
@@ -480,6 +486,49 @@ main{
                         color: $white;
                     }
                 }
+            }
+        }
+    }
+    #main-two{
+        .two-before-container-area{
+            position: relative;
+            &::before{
+                content: "MILIS NURSERIES";
+                @include textFont(
+                    $f_size:150px,
+                    $text_weight:700,
+                    $f_color: #f0f0f0
+                );
+                transform: translate(-50%, -50%);
+                letter-spacing: 0;
+            }
+        }
+        .two-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .two-logo{
+                text-align: center;
+            }
+            h2{
+                @include textFont(
+                    $transform:none,
+                    $text_weight:700,
+                    $f_color:$black,
+                    $margin: 0 0 16px 0,
+                    $text_align:center
+                );
+                letter-spacing: 0;
+                width: 50%;
+            }
+            p{
+                width: 50%;
+                @include textFont(
+                    $text_align:center,
+                    $margin:0 0 24px 0,
+                    $f_color:$white-a
+                );
             }
         }
     }

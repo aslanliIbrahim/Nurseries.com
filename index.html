@@ -309,7 +309,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="owl-carousel">
-                        <div class="caruesel-content">
+                        <div class="caruesel-content" data-target="1">
                             <div class="caruesel-img-side">
                                 <img src="./src/img/main-image/slide-1.jpg" alt="">
                             </div>
@@ -322,7 +322,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="caruesel-content">
+                        <div class="caruesel-content" data-target="2">
                             <div class="caruesel-img-side">
                                 <img src="./src/img/main-image/slide-1.jpg" alt="">
                             </div>
@@ -335,7 +335,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="caruesel-content">
+                        <div class="caruesel-content" data-target="3">
                             <div class="caruesel-img-side">
                                 <img src="./src/img/main-image/slide-1.jpg" alt="">
                             </div>
@@ -348,7 +348,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="caruesel-content">
+                        <div class="caruesel-content" data-target="4">
                             <div class="caruesel-img-side">
                                 <img src="./src/img/main-image/slide-1.jpg" alt="">
                             </div>
@@ -361,6 +361,29 @@
                                 </p>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="main-two">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 p-0 m-0 two-before-container-area"></div>
+                    <div class="col-12 two-content">
+                        <div class="two-logo">
+                            <img src="./src/img/main-image/logo_retina.png" alt="">
+                        </div>
+                        <h2>
+                            Production & trade of fruit trees, forest and ornamental plants
+                        </h2>
+                        <p>
+                            “Vasilios Kon. Milis Nurseries” company deals with the production and trade of fruit trees,
+                            forest and ornamental plants since the mid 1960's. We have a secured and healthy
+                            self-multiplying material of fruit trees (kiwifruit, almonds, pears, apricots, plums,
+                            cherries, apples, nectarines, peaches, peanuts, etc) at our disposal, as well as the most
+                            sophisticated subjects and varieties.
+                        </p>
+                        <p>&nbsp;</p>
                     </div>
                 </div>
             </div>
@@ -620,15 +643,17 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="./src/js/owl-js/owl.carousel.min.js"></script>
+    <script src="./src/js/index.js"></script>
 
     <script>
         $(document).ready(function () {
             $(".owl-carousel").owlCarousel({
-                items:1,
-                dots:false,
-                nav:true 
+                items: 1,
+                dots: false,
+                nav: true
             });
         });
     </script>

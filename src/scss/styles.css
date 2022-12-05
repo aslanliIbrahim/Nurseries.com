@@ -485,6 +485,16 @@ main #main-one .caruesel-content {
 
 main #main-one .caruesel-content .caruesel-img-side {
   position: relative;
+}
+
+main #main-one .caruesel-content .caruesel-img-side img {
+  width: 100%;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+main #main-one .caruesel-content .animation-class {
   -webkit-animation: createBox 10s infinite;
           animation: createBox 10s infinite;
 }
@@ -493,18 +503,22 @@ main #main-one .caruesel-content .caruesel-img-side {
   0% {
     -webkit-transform: scale(1);
             transform: scale(1);
+    overflow: hidden;
   }
   25% {
     -webkit-transform: scale(1.02);
             transform: scale(1.02);
+    overflow: hidden;
   }
   50% {
     -webkit-transform: scale(1.03);
             transform: scale(1.03);
+    overflow: hidden;
   }
   100% {
     -webkit-transform: scale(1.04);
             transform: scale(1.04);
+    overflow: hidden;
   }
 }
 
@@ -512,26 +526,23 @@ main #main-one .caruesel-content .caruesel-img-side {
   0% {
     -webkit-transform: scale(1);
             transform: scale(1);
+    overflow: hidden;
   }
   25% {
     -webkit-transform: scale(1.02);
             transform: scale(1.02);
+    overflow: hidden;
   }
   50% {
     -webkit-transform: scale(1.03);
             transform: scale(1.03);
+    overflow: hidden;
   }
   100% {
     -webkit-transform: scale(1.04);
             transform: scale(1.04);
+    overflow: hidden;
   }
-}
-
-main #main-one .caruesel-content .caruesel-img-side img {
-  width: 100%;
-  max-width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 main #main-one .caruesel-content .caruesel-title {
@@ -603,6 +614,57 @@ main #main-one .owl-nav .owl-next:hover {
 
 main #main-one .owl-nav .owl-next:hover span {
   color: #FFFF;
+}
+
+main #main-two .two-before-container-area {
+  position: relative;
+}
+
+main #main-two .two-before-container-area::before {
+  content: "MILIS NURSERIES";
+  font-size: 150px;
+  font-weight: 700;
+  color: #f0f0f0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  letter-spacing: 0;
+}
+
+main #main-two .two-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #main-two .two-content .two-logo {
+  text-align: center;
+}
+
+main #main-two .two-content h2 {
+  font-weight: 700;
+  color: #212121FF;
+  margin: 0 0 16px 0;
+  text-align: center;
+  text-transform: none;
+  letter-spacing: 0;
+  width: 50%;
+}
+
+main #main-two .two-content p {
+  width: 50%;
+  color: #bdbdbd;
+  margin: 0 0 24px 0;
+  text-align: center;
 }
 
 footer {

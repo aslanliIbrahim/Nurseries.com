@@ -649,14 +649,39 @@ main{
        
     }
     #main-four{
-        // border: 2px solid red;
         background-color: #F0F0F0FF;
+        position: relative;
+        padding: 80px 0px;
+        &::before{
+            content: "";
+            position: absolute;
+            z-index: 0;
+            top: -50%;
+            right: calc(100% - 2rem);
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: #224433;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            z-index: 0;
+            bottom: 20px;
+            right: 0px;
+            display: block;
+            width: 45px;
+            height: 90px;
+            border-radius: 12rem 0 0 12rem;
+
+            background: #224433;
+        }
         .main-four-title{
-            padding: 80px 0;
+            padding: 20px 0;
             h2{
                 letter-spacing: 0;
+                text-align: center;
                 @include textFont(
-                    $text_align:center,
                     $f_size:40px,
                     $line_height:1.2,
                     $f_color:$black,
@@ -666,15 +691,19 @@ main{
                 
             }
         }
-        .main-four-card{
-            margin-bottom: 60px;
+        .main-four-card{    
+            @include flexible(
+                flex,
+                center,
+                center,
+                row
+            );
             .card-content{
-                // border: 2px solid red;
+                width: 87%;
                 background-color: $white;
                 height: 400px;
                 display: flex;
                 flex-direction: column;
-                // justify-content: center;
                 align-items: stretch;
                 padding: 15px 15px;
             }
@@ -684,7 +713,8 @@ main{
                 padding: 4%;
                 img{
                     width: 100%;   
-                    object-fit: contain;
+                    height: 200px;
+                    object-fit: cover;
                 }
             }
             .card-description{
@@ -693,12 +723,32 @@ main{
                 justify-content: center;
                 align-items: center;
                 padding: 1.25rem;
+                h3{
+                    @include textFont(
+                        $f_size:20px,
+                        $line_height:32px,
+                        $margin:0 0 0.75rem 0,
+                        $text_weight:700,
+                        $f_color:$black,
+                    );
+                    letter-spacing: 0;
+                }
                 p{
+                    @include textFont(
+                        $margin:0 0 24px 0,
+                        $padding:0,
+                        $line_height:22px,
+                        $f_size:16px,
+                        $f_color:$text-color
+                    );
                     text-align: center;
-                    line-height: 22px;
+                    letter-spacing: 0;
                 }
             }
         }
+    }
+    #main-five{
+        
     }
 }
 

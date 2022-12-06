@@ -809,27 +809,67 @@ main #main-three .cards-area .fruit-card .fruit-img-area img {
 
 main #main-four {
   background-color: #F0F0F0FF;
+  position: relative;
+  padding: 80px 0px;
+}
+
+main #main-four::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: -50%;
+  right: calc(100% - 2rem);
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #224433;
+}
+
+main #main-four::after {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  bottom: 20px;
+  right: 0px;
+  display: block;
+  width: 45px;
+  height: 90px;
+  border-radius: 12rem 0 0 12rem;
+  background: #224433;
 }
 
 main #main-four .main-four-title {
-  padding: 80px 0;
+  padding: 20px 0;
 }
 
 main #main-four .main-four-title h2 {
   letter-spacing: 0;
+  text-align: center;
   font-size: 40px;
   font-weight: bold;
   line-height: 1.2;
   color: #212121FF;
   margin: 0 0 32px 0;
-  text-align: center;
 }
 
 main #main-four .main-four-card {
-  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 main #main-four .main-four-card .card-content {
+  width: 87%;
   background-color: #FFFF;
   height: 400px;
   display: -webkit-box;
@@ -851,8 +891,9 @@ main #main-four .main-four-card .card-image {
 
 main #main-four .main-four-card .card-image img {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 main #main-four .main-four-card .card-description {
@@ -872,9 +913,23 @@ main #main-four .main-four-card .card-description {
   padding: 1.25rem;
 }
 
+main #main-four .main-four-card .card-description h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #212121FF;
+  margin: 0 0 0.75rem 0;
+  letter-spacing: 0;
+}
+
 main #main-four .main-four-card .card-description p {
-  text-align: center;
+  font-size: 16px;
   line-height: 22px;
+  color: #616161;
+  margin: 0 0 24px 0;
+  padding: 0;
+  text-align: center;
+  letter-spacing: 0;
 }
 
 footer {

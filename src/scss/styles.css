@@ -933,11 +933,7 @@ main #main-four .main-four-card .card-description p {
 }
 
 main #main-five {
-  background-image: url("../img/main-image/fytoriamilis-02.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  position: relative;
 }
 
 main #main-five .main-five-title {
@@ -975,6 +971,32 @@ main #main-five .main-five-title p {
   padding: 0;
   text-align: center;
   width: 50%;
+}
+
+main #main-five .main-five-background {
+  background-image: url("../img/main-image/fytoriamilis-02.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 160%;
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1000;
+}
+
+main #main-five .main-five-cards-area {
+  border: 2px solid red;
+}
+
+main #main-five .main-five-cards-area .main-five-card {
+  border: 2px solid red;
+  background-color: #FFFF;
+  height: 300px;
 }
 
 footer {

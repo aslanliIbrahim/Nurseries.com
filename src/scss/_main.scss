@@ -748,7 +748,46 @@ main{
         }
     }
     #main-five{
-        
+        // border: 2px solid red;
+        background-image: url("../img/main-image/fytoriamilis-02.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        .main-five-title{
+            // border: 2px solid red;
+            margin-top: 30px;
+            padding-top: 20px;
+            @include flexible(
+                flex,
+                center,
+                center,
+                column
+            );
+            h2{
+                letter-spacing: 0px;
+                text-align: center;
+                @include textFont(
+                    $f_color:$white,
+                    // $text_weight:300,
+                    $f_size:32px,
+                    $line_height:40px,
+                    $margin:0 0 20px 0
+                );
+            }
+            p{
+                @include textFont(
+                    $margin:0 0 24px 0,
+                    $padding:0,
+                    $f_color:$white,
+                    $text_weight:400,
+                    $f_size:25px
+
+                );
+                text-align: center;
+                width: 50%;
+            }
+        }
     }
 }
 

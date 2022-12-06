@@ -932,6 +932,51 @@ main #main-four .main-four-card .card-description p {
   letter-spacing: 0;
 }
 
+main #main-five {
+  background-image: url("../img/main-image/fytoriamilis-02.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main #main-five .main-five-title {
+  margin-top: 30px;
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main #main-five .main-five-title h2 {
+  letter-spacing: 0px;
+  text-align: center;
+  font-size: 32px;
+  line-height: 40px;
+  color: #FFFF;
+  margin: 0 0 20px 0;
+}
+
+main #main-five .main-five-title p {
+  font-size: 25px;
+  font-weight: 400;
+  color: #FFFF;
+  margin: 0 0 24px 0;
+  padding: 0;
+  text-align: center;
+  width: 50%;
+}
+
 footer {
   color: #FFFF;
   background-color: #212121FF;

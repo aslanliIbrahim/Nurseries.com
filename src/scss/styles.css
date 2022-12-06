@@ -670,6 +670,9 @@ main #main-two .two-content p {
 main #main-three .main-three-title {
   height: 200px;
   width: 100%;
+  letter-spacing: 3px;
+  position: relative;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -683,11 +686,34 @@ main #main-three .main-three-title {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  font-size: #212121FF;
+  font-size: 30px;
   font-weight: bold;
+  color: #212121FF;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 3px;
+}
+
+main #main-three .main-three-title::after {
+  content: "Plants";
+  position: absolute;
+  z-index: -1;
+  top: -4%;
+  right: -8%;
+  font-size: 150px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: #f0f0f0;
+  font-weight: 700;
 }
 
 main #main-three .cards-area .fruit-card {
@@ -779,6 +805,76 @@ main #main-three .cards-area .fruit-card .fruit-img-area img {
   display: inline-block;
   max-width: 100%;
   height: auto !important;
+}
+
+main #main-four {
+  background-color: #F0F0F0FF;
+}
+
+main #main-four .main-four-title {
+  padding: 80px 0;
+}
+
+main #main-four .main-four-title h2 {
+  letter-spacing: 0;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #212121FF;
+  margin: 0 0 32px 0;
+  text-align: center;
+}
+
+main #main-four .main-four-card {
+  margin-bottom: 60px;
+}
+
+main #main-four .main-four-card .card-content {
+  background-color: #FFFF;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding: 15px 15px;
+}
+
+main #main-four .main-four-card .card-image {
+  padding: 4%;
+}
+
+main #main-four .main-four-card .card-image img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+main #main-four .main-four-card .card-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.25rem;
+}
+
+main #main-four .main-four-card .card-description p {
+  text-align: center;
+  line-height: 22px;
 }
 
 footer {
@@ -974,11 +1070,11 @@ footer .footer-down .wrap-signature a:hover {
 }
 
 *::-moz-selection {
-  background-color: #FF9030FF;
+  background-color: #CFD8DCFF;
 }
 
 *::selection {
-  background-color: #FF9030FF;
+  background-color: #CFD8DCFF;
 }
 
 body {

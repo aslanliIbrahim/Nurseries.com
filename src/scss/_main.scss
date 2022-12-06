@@ -536,6 +536,9 @@ main{
         .main-three-title{
             height: 200px;
             width: 100%;
+            letter-spacing: 3px;
+            position: relative;
+            z-index: 2;
             @include flexible(
                 flex,
                 center,
@@ -544,11 +547,30 @@ main{
             );
             @include textFont(
                 $text_weight:bold,
-                $f_size:$black,
+                $f_size:30px,
                 $transform:uppercase,
-                $text_align:center
+                $text_align:center,
+                $f_color:$black
             );
-            letter-spacing: 3px;
+            &::after{
+                content: "Plants";
+                position: absolute;
+                z-index: -1;
+                top:-4%;
+                right: -8%;
+                font-size: 150px;
+                letter-spacing: 0;
+                text-transform: uppercase;
+                // width: calc(100vw - 20px);
+                // width: 100%;
+                // border: 2px solid red;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                color: #f0f0f0;
+                font-weight: 700;
+            }
         }
         .cards-area{
             .fruit-card{
@@ -625,6 +647,58 @@ main{
             }
         }
        
+    }
+    #main-four{
+        // border: 2px solid red;
+        background-color: #F0F0F0FF;
+        .main-four-title{
+            padding: 80px 0;
+            h2{
+                letter-spacing: 0;
+                @include textFont(
+                    $text_align:center,
+                    $f_size:40px,
+                    $line_height:1.2,
+                    $f_color:$black,
+                    $margin:0 0 32px 0,
+                    $text_weight:bold,
+                );
+                
+            }
+        }
+        .main-four-card{
+            margin-bottom: 60px;
+            .card-content{
+                // border: 2px solid red;
+                background-color: $white;
+                height: 400px;
+                display: flex;
+                flex-direction: column;
+                // justify-content: center;
+                align-items: stretch;
+                padding: 15px 15px;
+            }
+            
+            .card-image{
+                // border: 1px solid red;
+                padding: 4%;
+                img{
+                    width: 100%;   
+                    object-fit: contain;
+                }
+            }
+            .card-description{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 1.25rem;
+                p{
+                    text-align: center;
+                    line-height: 22px;
+                }
+            }
+        }
     }
 }
 

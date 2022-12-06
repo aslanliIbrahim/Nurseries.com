@@ -532,6 +532,100 @@ main{
             }
         }
     }
+    #main-three{
+        .main-three-title{
+            height: 200px;
+            width: 100%;
+            @include flexible(
+                flex,
+                center,
+                center,
+                row
+            );
+            @include textFont(
+                $text_weight:bold,
+                $f_size:$black,
+                $transform:uppercase,
+                $text_align:center
+            );
+            letter-spacing: 3px;
+        }
+        .cards-area{
+            .fruit-card{
+                &:nth-child(n):hover{
+                    p{
+                        color: $white;
+                    }
+                }
+                &:nth-child(1):hover{
+                    background-color: #007DCFFF;
+                }
+                &:nth-child(2):hover{
+                    background-color: #00544DFF;
+                }  
+                &:nth-child(3):hover{
+                    background-color: #260D56FF;
+                } 
+                &:nth-child(4):hover{
+                    background-color: $main-color;
+                }
+                &:nth-child(5):hover{
+                    background-color: #7DBA00FF;
+                }
+                &:nth-child(6):hover{
+                    background-color: #E60D2DFF;
+                }
+                &:nth-child(7):hover{
+                    background-color: #0894D8FF;
+                }
+                &:nth-child(8):hover{
+                    background-color: #36578EFF;
+                }
+                &:nth-child(9):hover{
+                    background-color: #7DBA00FF;
+                }
+                &:nth-child(10):hover{
+                    background-color: #00544DFF;
+                }
+                &:nth-child(11):hover{
+                    background-color: #E60D2DFF;
+                }
+                &:nth-child(12):hover{
+                    background-color: #00544DFF;
+                }
+                transition: 0.3s ease-in-out;
+                @include flexible(
+                    flex,
+                    center,
+                    center,
+                    column
+                );
+                padding: 16px 32px;
+                min-height: 200px;
+                text-align: center;
+                p{
+                    @include textFont(
+                        $f_size:19px,
+                        $text_weight:bold,
+    
+                    );
+                }
+                .fruit-img-area{
+                    width: 100%;
+                    margin: 0 auto;
+                    text-align: center;
+                    img{
+                        width: auto;
+                        display: inline-block;
+                        max-width: 100%;
+                        height: auto !important;
+                        
+                    }
+                }
+            }
+        }
+       
+    }
 }
 
 footer{

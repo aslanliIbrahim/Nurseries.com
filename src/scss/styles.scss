@@ -6,11 +6,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+    &::selection{
+       background-color: #FF9030FF;
+    }
 }
 body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+   
 }
 footer{
     

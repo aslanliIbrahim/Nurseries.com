@@ -14,12 +14,14 @@ const cardanimation = {
 
 for (let i = 0; i < crslContent.length; i++) {
 
-    const currentContent = document.querySelectorAll(".caruesel-content.animation-class")
+    const currentContent = document.querySelectorAll(".caruesel-content.animation-class");
+    
     
     if (crslContent[i].dataset.target === "1") {
         crslContent[i].addEventListener("mouseover", function(){
             crslContent[i].animate(cardAnimatie,cardanimation)
-        })
+        });
+        console.log();
         
     } else if(crslContent[i].dataset.target === "2") {
         crslContent[i].addEventListener("mouseover", function(){

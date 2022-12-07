@@ -7,7 +7,7 @@ header nav .logo-area a {
 }
 
 header nav .logo-area a img {
-  width: 75%;
+  width: 100%;
   height: 93%;
   -o-object-fit: contain;
      object-fit: contain;
@@ -17,10 +17,13 @@ header nav .nav-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header nav .nav-area .main-nav {
-  width: 100%;
+  width: 90%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -989,14 +992,76 @@ main #main-five .main-five-background {
   z-index: -1000;
 }
 
-main #main-five .main-five-cards-area {
-  border: 2px solid red;
+main #main-five .main-five-cards-area .main-five-card {
+  width: 90%;
+  background-color: #FFFF;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
-main #main-five .main-five-cards-area .main-five-card {
-  border: 2px solid red;
-  background-color: #FFFF;
-  height: 300px;
+main #main-five .main-five-cards-area .main-five-card .five-card-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #main-five .main-five-cards-area .main-five-card .five-card-img img {
+  width: 70%;
+  height: 70%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+main #main-five .main-five-cards-area .main-five-card .five-card-description {
+  padding: 1.25rem;
+  min-height: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #main-five .main-five-cards-area .main-five-card .five-card-description h3 {
+  font-size: 22px;
+  letter-spacing: -1px;
+  line-height: 32px;
+  text-align: center;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+main #main-five .main-five-cards-area .main-five-card .five-card-description p {
+  text-align: center;
+  line-height: 22px;
+  color: #616161;
+  font-weight: 400;
 }
 
 footer {

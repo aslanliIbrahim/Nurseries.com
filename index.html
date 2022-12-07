@@ -308,7 +308,7 @@
         <section id="main-one">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="owl-carousel">
+                    <div class="owl-carousel one-slide">
                         <div class="caruesel-content" data-target="1">
                             <div class="caruesel-img-side">
                                 <img src="./src/img/main-image/slide-1.jpg" alt="">
@@ -641,6 +641,58 @@
                 </div>
             </div>
         </section>
+        <section id="main-six">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="circle-area"></div>
+                    <div class="col-12 main-six-title">
+                        <h2>PHOTO GALLERY</h2>
+                    </div>
+
+                    <div class="col-12 six-coruesel-side">
+                        <div class="owl-carousel two-slide">
+                            <div class="img-side">
+                                <a href="">
+                                    <img  src="./src/img/main-image/tree-planting.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="img-side">
+                                <a href="">
+                                    <img  src="./src/img/main-image/tree-planting.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="img-side">
+                                <a href="">
+                                    <img  src="./src/img/main-image/tree-planting.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="img-side">
+                                <a href="">
+                                    <img  src="./src/img/main-image/tree-planting.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="img-side">
+                                <a href="">
+                                    <img  src="./src/img/main-image/tree-planting.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="img-side">
+                                <a href="">
+                                    <img  src="./src/img/main-image/tree-planting.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="main-seven">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6"></div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -903,11 +955,17 @@
 
     <script>
         $(document).ready(function () {
-            $(".owl-carousel").owlCarousel({
+            $(".one-slide").owlCarousel({
                 items: 1,
                 dots: false,
                 nav: true
-            });
+            }),
+                $(".two-slide").owlCarousel({
+                    items: 3,
+                    dots: true,
+                    nav: true,
+                    margin:20
+                });
         });
     </script>
 </body>

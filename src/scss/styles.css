@@ -982,7 +982,7 @@ main #main-five .main-five-background {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 160%;
+  height: 100%;
   min-height: 100%;
   width: 100%;
   position: absolute;
@@ -1062,6 +1062,185 @@ main #main-five .main-five-cards-area .main-five-card .five-card-description p {
   line-height: 22px;
   color: #616161;
   font-weight: 400;
+}
+
+main #main-six {
+  position: relative;
+}
+
+main #main-six .circle-area {
+  border-width: 2px;
+  position: absolute;
+  top: 0;
+  right: 60px;
+  z-index: 0;
+  width: 120px;
+  height: 240px;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  border-radius: 12rem 0 0 12rem;
+  border: 1px solid #ff9030;
+}
+
+main #main-six .circle-area::before {
+  content: '';
+  position: absolute;
+  top: 29px;
+  left: 16px;
+  z-index: -1;
+  width: 90px;
+  height: 180px;
+  border-radius: 12rem 0 0 12rem;
+  border: 1px solid #ff9030;
+}
+
+main #main-six .circle-area::after {
+  content: '';
+  position: absolute;
+  top: 60px;
+  left: 34px;
+  z-index: -1;
+  width: 60px;
+  height: 120px;
+  border-radius: 12rem 0 0 12rem;
+  border: 1px solid #ff9030;
+}
+
+main #main-six .main-six-title h2 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  width: 100%;
+  height: 200px;
+  color: #212121FF;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+main #main-six .main-six-title h2::before {
+  content: 'PHOTO GALLERY';
+  font-size: 150px;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  width: calc(100vw - 20px);
+  height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #f0f0f0;
+  letter-spacing: 0;
+}
+
+main #main-six .six-coruesel-side .two-slide .img-side {
+  margin-bottom: 10px;
+}
+
+main #main-six .six-coruesel-side .two-slide .img-side a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+main #main-six .six-coruesel-side .two-slide .img-side a img {
+  width: 100%;
+  height: 90%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+main #main-six .six-coruesel-side .two-slide .owl-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 0;
+}
+
+main #main-six .six-coruesel-side .two-slide .owl-nav .owl-prev {
+  background: white;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+main #main-six .six-coruesel-side .two-slide .owl-nav .owl-prev:hover {
+  background-color: #FF9030FF;
+}
+
+main #main-six .six-coruesel-side .two-slide .owl-nav .owl-prev:hover span {
+  color: #FFFF;
+}
+
+main #main-six .six-coruesel-side .two-slide .owl-nav .owl-prev span {
+  font-size: 31px;
+  color: #212121FF;
+}
+
+main #main-six .six-coruesel-side .two-slide .owl-nav .owl-next {
+  background: white;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+main #main-six .six-coruesel-side .two-slide .owl-nav .owl-next:hover {
+  background-color: #FF9030FF;
+}
+
+main #main-six .six-coruesel-side .two-slide .owl-nav .owl-next:hover span {
+  color: #FFFF;
+}
+
+main #main-six .six-coruesel-side .two-slide .owl-nav .owl-next span {
+  font-size: 31px;
+  color: #212121FF;
+}
+
+main #main-six .six-coruesel-side .two-slide .owl-dots {
+  margin: 10px 0 0 0;
+  text-align: center;
+}
+
+main #main-six .six-coruesel-side .two-slide .owl-dots .owl-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  background-color: #bdbdbd;
+  margin: 0px 10px;
+}
+
+main #main-six .six-coruesel-side .two-slide .owl-dots .active {
+  background-color: #FF9030FF;
 }
 
 footer {

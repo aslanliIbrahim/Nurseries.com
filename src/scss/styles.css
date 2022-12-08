@@ -1292,6 +1292,37 @@ main #main-seven .seven-left-side ul li::before {
   padding-left: 3px;
 }
 
+main #main-seven .circle-counter {
+  height: 260px;
+  width: 260px;
+  background-color: white;
+  border: 3px dashed #FF9030FF;
+  border-radius: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #main-seven .header-counter {
+  color: #212121FF;
+  font-size: 30px;
+}
+
+main #main-seven .number-counter {
+  color: #FF9030FF;
+  font-size: 70px;
+}
+
 main #main-eight .main-eight-title {
   margin-bottom: 50px;
 }

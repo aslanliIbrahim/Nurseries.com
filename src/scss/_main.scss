@@ -1054,6 +1054,31 @@ main{
                 }
             }
         }
+        .seven-right-side{
+            
+        }
+        .circle-counter{
+            height:260px; 
+            width:260px;
+            background-color:white;
+            border: 3px dashed $main-color; 
+            border-radius: 150px; 
+            display:flex; 
+            flex-direction:column; 
+            align-items:center; 
+            justify-content:center;
+
+            
+        }
+        .header-counter{
+            color: $black; 
+            font-size:30px;
+        }
+        
+        .number-counter{
+            color: $main-color;
+            font-size:70px;
+        }
     }
     #main-eight{
         .main-eight-title{

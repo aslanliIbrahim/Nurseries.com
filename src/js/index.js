@@ -38,40 +38,42 @@ for (let i = 0; i < crslContent.length; i++) {
 var numberOfUsers = 90;
 
 // STARTING NUMBER
-var counter_number = 0;
-// HOW QUICKLY YOU COUNT IN MS
-var counter_duration = 100;
+	  var counter_number = 0;
+	  // HOW QUICKLY YOU COUNT IN MS
+	  var counter_duration = 100;
 
-var myCounter = setInterval(myTimer, counter_duration);
+		var myCounter = setInterval(myTimer, counter_duration);
 
-function myTimer() {
-  counter_number++;
-  console.log("myTimer");
-  document.getElementById("counter_text").innerHTML = counter_number;
-  if (counter_number === numberOfUsers) {
-    return myStopFunction();
-  }
-}
+		function myTimer() {
+		    counter_number++;
+		    console.log("myTimer")
+		    document.getElementById("counter_text").innerHTML = counter_number;
+		    if(counter_number === numberOfUsers){
+		    	return myStopFunction();
+		    }
+		}
+
+		function myStopFunction() {
+			console.log("MY STOP FUNCTIOn")
+		    clearInterval(myCounter);
+		}
 
 function myStopFunction() {
   console.log("MY STOP FUNCTIOn");
   clearInterval(myCounter);
 }
 
-
-
-var numberOfUsers2 = 180;
+var numberOfUsers2 = 50;
 
 // STARTING NUMBER
 var counter_number2 = 0;
 // HOW QUICKLY YOU COUNT IN MS
-var counter_durationn = 1000;
+var counter_durationn = 100;
 
-var myCounterr = setInterval(myTimerr, counter_durationn);
+var myCounterrr = setInterval(myTimerr, counter_durationn);
 
 function myTimerr() {
   counter_number2++;
-  console.log("myTimer");
   document.getElementById("counter_textt").innerHTML = counter_number2;
   if (counter_number2 === numberOfUsers2) {
     return myStopFunction();
@@ -80,19 +82,19 @@ function myTimerr() {
 
 function myStopFunction() {
   console.log("MY STOP FUNCTIOn");
-  clearInterval(myCounter);
+  clearInterval(myCounterrr);
 }
 
-var numberOfUsers3 = 1800;
+var numberOfUsers3 = 60;
 
 // STARTING NUMBER
 var counter_number3 = 0;
 // HOW QUICKLY YOU COUNT IN MS
 var counter_durationn = 2;
 
-var myCounterr = setInterval(myTimerr, counter_duration);
+var myCounterr = setInterval(myTimerrr, counter_duration);
 
-function myTimerr() {
+function myTimerrr() {
   counter_number3++;
   console.log("myTimer");
   document.getElementById("counter_texttt").innerHTML = counter_number3;
@@ -103,5 +105,5 @@ function myTimerr() {
 
 function myStopFunction() {
   console.log("MY STOP FUNCTIOn");
-  clearInterval(myCounter);
+  clearInterval(myCounterr);
 }

@@ -372,7 +372,6 @@ header{
     }
 }
 
-
 main{
     #main-one{
         // border: 2px solid red;
@@ -1054,31 +1053,59 @@ main{
                 }
             }
         }
-        .seven-right-side{
-            
-        }
-        .circle-counter{
-            height:260px; 
-            width:260px;
-            background-color:white;
-            border: 3px dashed $main-color; 
-            border-radius: 150px; 
-            display:flex; 
-            flex-direction:column; 
-            align-items:center; 
-            justify-content:center;
+        .seven-rigth-side{
+            display: flex !important;
 
+            .circle-counter{
+                height:260px; 
+                width:260px;
+                background-color:white;
+                border: 3px dashed $main-color; 
+                border-radius: 150px; 
+                display:flex; 
+                flex-direction:column; 
+                align-items:center; 
+                justify-content:center;
+            }
+            .circle-counterr{
+                height:130px; 
+                width:130px;
+                background-color:white;
+                border: 3px dashed $main-color; 
+                border-radius: 150px; 
+                display:flex; 
+                flex-direction:column; 
+                align-items:center; 
+                justify-content:center;
+            }
+            .header-counter{
+                color: $black; 
+                font-size:30px;
+            }
+            .number-counter{
+                color: $main-color;
+                font-size:70px;
+            }
+            .header-counterr{
+                color: $black; 
+                font-size:15px;
+            }
+            .number-counterr{
+                color: $main-color;
+                font-size:35px;
+            }
+
+            .for-row{
+                width: 100%;
+                display: flex !important;
+                flex-direction: column !important;
+                align-content: center !important;
+                align-items: flex-end !important;
+                justify-content: space-between !important;
+            }
             
-        }
-        .header-counter{
-            color: $black; 
-            font-size:30px;
         }
         
-        .number-counter{
-            color: $main-color;
-            font-size:70px;
-        }
     }
     #main-eight{
         .main-eight-title{

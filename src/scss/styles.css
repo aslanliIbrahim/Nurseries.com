@@ -1292,7 +1292,13 @@ main #main-seven .seven-left-side ul li::before {
   padding-left: 3px;
 }
 
-main #main-seven .circle-counter {
+main #main-seven .seven-rigth-side {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+main #main-seven .seven-rigth-side .circle-counter {
   height: 260px;
   width: 260px;
   background-color: white;
@@ -1313,14 +1319,64 @@ main #main-seven .circle-counter {
           justify-content: center;
 }
 
-main #main-seven .header-counter {
+main #main-seven .seven-rigth-side .circle-counterr {
+  height: 130px;
+  width: 130px;
+  background-color: white;
+  border: 3px dashed #FF9030FF;
+  border-radius: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #main-seven .seven-rigth-side .header-counter {
   color: #212121FF;
   font-size: 30px;
 }
 
-main #main-seven .number-counter {
+main #main-seven .seven-rigth-side .number-counter {
   color: #FF9030FF;
   font-size: 70px;
+}
+
+main #main-seven .seven-rigth-side .header-counterr {
+  color: #212121FF;
+  font-size: 15px;
+}
+
+main #main-seven .seven-rigth-side .number-counterr {
+  color: #FF9030FF;
+  font-size: 35px;
+}
+
+main #main-seven .seven-rigth-side .for-row {
+  width: 100%;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  -ms-flex-line-pack: center !important;
+      align-content: center !important;
+  -webkit-box-align: end !important;
+      -ms-flex-align: end !important;
+          align-items: flex-end !important;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
 }
 
 main #main-eight .main-eight-title {

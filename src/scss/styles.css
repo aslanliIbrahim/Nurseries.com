@@ -176,7 +176,7 @@ header nav .nav-area .main-nav .main-li:nth-child(2):hover .sub-menu-nav-one .su
   bottom: 0;
   left: 16px;
   height: 1px;
-  background-color: #bdbdbd;
+  background-color: #616161;
   width: calc(100% - 32px);
 }
 
@@ -313,7 +313,7 @@ header nav .nav-area .main-nav .main-li .sub-menu-nav-one {
   margin-left: -220px;
   top: 83px;
   left: 90px;
-  background-color: #bdbdbd;
+  background-color: #616161;
   opacity: 0;
   visibility: hidden;
 }
@@ -665,7 +665,7 @@ main #main-two .two-content h2 {
 
 main #main-two .two-content p {
   width: 50%;
-  color: #bdbdbd;
+  color: #616161;
   margin: 0 0 24px 0;
   text-align: center;
 }
@@ -1235,12 +1235,125 @@ main #main-six .six-coruesel-side .two-slide .owl-dots .owl-dot {
   width: 12px;
   height: 12px;
   border-radius: 12px;
-  background-color: #bdbdbd;
+  background-color: #616161;
   margin: 0px 10px;
 }
 
 main #main-six .six-coruesel-side .two-slide .owl-dots .active {
   background-color: #FF9030FF;
+}
+
+main #main-seven .seven-left-side h2 {
+  letter-spacing: 0px;
+  text-transform: none;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 80px;
+  color: #212121FF;
+}
+
+main #main-seven .seven-left-side p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #616161;
+  margin: 0 0 24px 0;
+  padding: 0;
+}
+
+main #main-seven .seven-left-side ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+main #main-seven .seven-left-side ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  font-size: 24px;
+  font-weight: bold;
+  color: #212121FF;
+  padding: 5px 0;
+}
+
+main #main-seven .seven-left-side ul li::before {
+  content: ">";
+  color: #ff9030;
+  font-size: 24px;
+  text-align: center;
+  line-height: 48px !important;
+  width: 48px;
+  height: 48px;
+  margin-right: 1rem;
+  padding-left: 3px;
+}
+
+main #main-eight .main-eight-title h2 {
+  position: relative;
+  color: #FFFF;
+  text-align: center;
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  letter-spacing: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-weight: bold;
+  color: #FFFF;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+main #main-eight .main-eight-title h2::before {
+  content: "BLOG";
+  position: absolute;
+  z-index: -1;
+  top: -4%;
+  right: 0;
+  font-size: 118px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: #f0f0f0;
+  font-weight: 700;
+}
+
+main #main-eight .main-eight-title h2::after {
+  content: '';
+  background: #ff9030;
+  border-radius: 50%;
+  width: 100vw;
+  height: 100vw;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: -1;
 }
 
 footer {
@@ -1315,7 +1428,7 @@ footer .footer-up .footer-contact ul li i {
 }
 
 footer .footer-up .footer-contact ul li a {
-  color: #bdbdbd;
+  color: #616161;
   font-size: 16px;
   line-height: 32px;
   letter-spacing: 0.5px;
@@ -1342,7 +1455,7 @@ footer .footer-up .footer-contact .icons-area {
 footer .footer-up .footer-contact .icons-area a {
   text-decoration: none;
   letter-spacing: 0.5px;
-  color: #bdbdbd;
+  color: #616161;
   -webkit-transition: 300ms auto ease-out;
   transition: 300ms auto ease-out;
   font-size: 20px;
@@ -1383,17 +1496,17 @@ footer .footer-down {
 footer .footer-down .wrap-copyright span {
   text-align: left;
   font-weight: 600;
-  color: #bdbdbd;
+  color: #616161;
 }
 
 footer .footer-down .wrap-copyright strong {
-  color: #bdbdbd;
+  color: #616161;
 }
 
 footer .footer-down .wrap-copyright .legal a {
   line-height: 32px;
   letter-spacing: 0.5px;
-  color: #bdbdbd;
+  color: #616161;
   text-decoration: none;
   -webkit-transition: 300ms auto ease-out;
   transition: 300ms auto ease-out;
@@ -1418,7 +1531,7 @@ footer .footer-down .wrap-signature {
 
 footer .footer-down .wrap-signature a {
   font-size: 16px;
-  color: #bdbdbd;
+  color: #616161;
   text-decoration: none;
   -webkit-transition: 300ms auto ease-out;
   transition: 300ms auto ease-out;

@@ -31,3 +31,16 @@
   transition: $transition;
   text-transform: $transform;
 }
+@mixin ul(
+  $pad: null,
+  $mar: null,
+  $list-style: null,
+  $width: null,
+  $height: null
+) {
+  padding: $pad;
+  margin: $mar;
+  list-style: $list-style;
+  width: $width;
+  height: $height;
+}

@@ -1000,6 +1000,114 @@ main{
             
         }
     }
+    #main-seven{
+        .seven-left-side{
+            // border: 2px solid red;
+            h2{
+                letter-spacing: 0px;
+                text-transform: none;
+                @include textFont(
+                    $f_color:$black,
+                    $f_size:60px,
+                    $text_weight:300,
+                    $line_height:80px,
+                );
+            }
+            p{
+                @include textFont(
+                    $f_size:24px,
+                    $line_height:32px,
+                    $margin:0 0 24px 0,
+                    $padding:0,
+                    $f_color:$white-a,
+                    $text_weight:400
+                );
+            }
+            ul{
+                @include ul(
+                    $pad:0,
+                    $mar:0,
+                    $list-style:none
+                );
+                li{
+                    @include flexible(
+                        flex,
+                        $aling:start,
+                    );
+                    @include textFont(
+                        $f_size:24px,
+                        $f_color:$black,
+                        $text_weight:bold,
+                        $padding:5px 0
+                    );
+                    &::before{
+                        content: ">";
+                        color: #ff9030;
+                        font-size: 24px;
+                        text-align: center;
+                        line-height: 48px !important;
+                        width: 48px;
+                        height: 48px;
+                        margin-right: 1rem;
+                        padding-left: 3px;
+                    }
+                }
+            }
+        }
+    }
+    #main-eight{
+        .main-eight-title{
+            h2{
+                position: relative;
+                color: $white;
+                text-align: center;
+                height: 200px;
+                width: 100%;
+                overflow: hidden;
+                letter-spacing: 3px;
+                @include flexible(
+                    flex,
+                    center,
+                    center,
+                    row
+                );
+                @include textFont(
+                    $text_weight:bold,
+                    $margin:0,
+                    $transform:uppercase,
+                    $f_color:$white
+                );
+                &::before{
+                    content: "BLOG";
+                    position: absolute;
+                    z-index: -1;
+                    top: -4%;
+                    right: 0;
+                    font-size: 118px;
+                    letter-spacing: 0;
+                    text-transform: uppercase;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    color: #f0f0f0;
+                    font-weight: 700;
+                }
+                &::after{
+                    content: '';
+                    background: #ff9030;
+                    border-radius: 50%;
+                    width: 100vw;
+                    height: 100vw;
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    z-index: -1;
+                }
+            }
+        }
+    }
 }
 
 footer{

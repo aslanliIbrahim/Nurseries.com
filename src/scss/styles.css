@@ -2035,6 +2035,119 @@ footer .footer-down .wrap-signature a:hover {
   color: #FFFF;
 }
 
+#plants-one .page-title {
+  padding: 18rem 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+#plants-one .page-title::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: calc(50% - 9px);
+  width: 100vw;
+  height: 100%;
+  background: url("../img/plant-image/speciesbg.jpg") 50% 50%/cover no-repeat #224433;
+  -webkit-transform: translate(-50vw, -50%);
+          transform: translate(-50vw, -50%);
+}
+
+#plants-one .page-title h1 {
+  letter-spacing: 10px;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #FFFF;
+  text-align: center;
+}
+
+#plants-one .page-title ul {
+  padding: 4rem 0 2rem 0;
+  margin: 0;
+  color: #FFFF;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#plants-one .page-title ul li {
+  margin-right: 25px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+#plants-one .page-title ul li a {
+  color: #FFFF;
+  text-decoration: none;
+  background-position: -100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#FF9030FF), color-stop(50%, #FF9030FF), color-stop(50%, #FFFF));
+  background-image: linear-gradient(to right, #FF9030FF, #FF9030FF 50%, #FFFF 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#plants-one .page-title ul li a::before {
+  content: '';
+  background: #FF9030FF;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#plants-one .page-title ul li a:hover {
+  background-position: 0;
+}
+
+#plants-one .page-title ul li a:hover::before {
+  width: 100%;
+}
+
+#plants-one .page-title ul li:nth-child(2) {
+  position: relative;
+}
+
+#plants-one .page-title ul li:nth-child(2)::before {
+  content: ">";
+  color: #FF9030FF;
+  position: absolute;
+  top: -3px;
+  left: -18px;
+  width: 32px;
+  height: 32px;
+  font-size: 19px;
+  font-weight: 700;
+}
+
 * {
   margin: 0;
   padding: 0;

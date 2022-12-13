@@ -2532,6 +2532,57 @@ footer .footer-down .wrap-signature a:hover {
   letter-spacing: 0;
 }
 
+#plantsb-four .plantsb-card {
+  margin-bottom: 2rem;
+}
+
+#plantsb-four .plantsb-card .card-common {
+  width: 100%;
+}
+
+#plantsb-four .plantsb-card .card-common .thumb {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 0;
+  padding: 0;
+  padding-bottom: 66.67%;
+  overflow: hidden;
+  background: none;
+}
+
+#plantsb-four .plantsb-card .card-common .thumb a img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: block;
+  max-width: 100%;
+  width: auto;
+  height: auto !important;
+  max-height: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#plantsb-four .plantsb-card .card-common h2 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #212121FF;
+  background-color: #FFFF;
+  padding: 0 1rem;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+#plantsb-four .plantsb-card .card-common h2 a {
+  text-decoration: none;
+  color: #212121FF;
+}
+
 #plantsb-five .video-wrap {
   margin: 30px auto;
   border: 8px solid #FFFF;

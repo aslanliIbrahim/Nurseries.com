@@ -2532,6 +2532,111 @@ footer .footer-down .wrap-signature a:hover {
   letter-spacing: 0;
 }
 
+#plants-last {
+  background-color: #EEEEEEFF;
+  padding: 5rem 0;
+}
+
+#plants-last .form-side form {
+  width: 100%;
+  display: block;
+}
+
+#plants-last .form-side form .edit-label-input {
+  margin-bottom: 16px;
+}
+
+#plants-last .form-side form .edit-label-input label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 28px;
+  text-align: left;
+}
+
+#plants-last .form-side form .edit-label-input input {
+  color: #616161;
+  background-color: #FFFF;
+  display: block;
+  outline: none;
+  margin: 0;
+  text-align: left;
+  max-width: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+  height: 56px;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 14px 24px;
+  border: 1px solid #e0e0e0;
+}
+
+#plants-last .form-side form .edit-label-input input:hover {
+  border: 1px solid #212121FF;
+}
+
+#plants-last .form-side form .message-area {
+  margin-bottom: 16px;
+}
+
+#plants-last .form-side form .message-area label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 28px;
+  text-align: left;
+}
+
+#plants-last .form-side form .message-area textarea {
+  height: auto;
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #FFFF;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+#plants-last .form-side form .message-area textarea:hover {
+  border: 1px solid #212121FF;
+}
+
+#plants-last .form-side form .checkbox-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#plants-last .form-side form .checkbox-area .for-checkbox {
+  padding-right: 16px;
+}
+
+#plants-last .form-side form .checkbox-area label {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 28px;
+  text-align: left;
+  color: #616161;
+  letter-spacing: 0px;
+}
+
 * {
   margin: 0;
   padding: 0;

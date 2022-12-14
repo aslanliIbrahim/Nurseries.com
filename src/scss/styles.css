@@ -2532,6 +2532,196 @@ footer .footer-down .wrap-signature a:hover {
   letter-spacing: 0;
 }
 
+#plantsb-table .table-title h2 {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #FF9030FF;
+  margin: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+#plantsb-table .table-area {
+  position: relative;
+  padding: 4rem 1rem 1rem;
+  margin-bottom: 1rem;
+  background: #f0f0f0;
+  overflow: hidden;
+  border: 1rem solid #224433;
+}
+
+#plantsb-table .table-area .table-monhts {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  bottom: 0;
+  right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(100% - 2rem);
+  height: auto;
+}
+
+#plantsb-table .table-area .table-monhts .table-monht {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 0.74rem;
+}
+
+#plantsb-table .table-area .table-side {
+  position: relative;
+  z-index: 1;
+}
+
+#plantsb-table .table-area .table-side .table-side-inside {
+  -webkit-transform: translateX(calc(13.3333333333333% - 1rem));
+          transform: translateX(calc(13.3333333333333% - 1rem));
+}
+
+#plantsb-table .table-area .table-side .table-side-inside a {
+  -webkit-transition: color 300ms ease-out;
+  transition: color 300ms ease-out;
+  color: #212121FF;
+  text-decoration: none;
+}
+
+#plantsb-table .table-area .table-side .table-side-inside a:hover span {
+  background-color: #FF9030FF;
+}
+
+#plantsb-table .table-area .table-side .table-side-inside a span {
+  width: 7.33333333333333%;
+  display: block;
+  background: #224433;
+  height: 8px;
+  border-radius: 4px;
+  margin-bottom: 2px;
+  -webkit-transition: color 300ms ease-out;
+  transition: color 300ms ease-out;
+}
+
+#plantsb-table .table-area .table-side #table-side-two {
+  -webkit-transform: translateX(calc(16.6666666666667% - 1rem));
+          transform: translateX(calc(16.6666666666667% - 1rem));
+}
+
+#plantsb-table .table-area .table-side #table-side-two a {
+  -webkit-transition: color 300ms ease-out;
+  transition: color 300ms ease-out;
+  color: #212121FF;
+  text-decoration: none;
+}
+
+#plantsb-table .table-area .table-side #table-side-two a:hover span {
+  background-color: #FF9030FF;
+}
+
+#plantsb-table .table-area .table-side #table-side-two a span {
+  width: 7.33333333333333%;
+  display: block;
+  background: #224433;
+  height: 8px;
+  border-radius: 4px;
+  margin-bottom: 2px;
+  -webkit-transition: color 300ms ease-out;
+  transition: color 300ms ease-out;
+}
+
+#plantsb-table .table-area .table-side #table-side-three {
+  -webkit-transform: translateX(calc(46.6666666666667% - 1rem));
+          transform: translateX(calc(46.6666666666667% - 1rem));
+}
+
+#plantsb-table .table-area .table-side #table-side-three a {
+  -webkit-transition: color 300ms ease-out;
+  transition: color 300ms ease-out;
+  color: #212121FF;
+  text-decoration: none;
+}
+
+#plantsb-table .table-area .table-side #table-side-three a:hover span {
+  background-color: #FF9030FF;
+}
+
+#plantsb-table .table-area .table-side #table-side-three a span {
+  width: 7.33333333333333%;
+  display: block;
+  background: #224433;
+  height: 8px;
+  border-radius: 4px;
+  margin-bottom: 2px;
+  -webkit-transition: color 300ms ease-out;
+  transition: color 300ms ease-out;
+}
+
+#plantsb-table .table-area .table-side #table-side-four {
+  -webkit-transform: translateX(calc(53.3333333333333% - 1rem));
+          transform: translateX(calc(53.3333333333333% - 1rem));
+}
+
+#plantsb-table .table-area .table-side #table-side-four a {
+  -webkit-transition: color 300ms ease-out;
+  transition: color 300ms ease-out;
+  color: #212121FF;
+  text-decoration: none;
+}
+
+#plantsb-table .table-area .table-side #table-side-four a:hover span {
+  background-color: #FF9030FF;
+}
+
+#plantsb-table .table-area .table-side #table-side-four a span {
+  width: 7.33333333333333%;
+  display: block;
+  background: #224433;
+  height: 8px;
+  border-radius: 4px;
+  margin-bottom: 2px;
+  -webkit-transition: color 300ms ease-out;
+  transition: color 300ms ease-out;
+}
+
+#plantsb-table .table-area .table-side #table-side-five {
+  -webkit-transform: translateX(calc(60.6666666666667% - 1rem));
+          transform: translateX(calc(60.6666666666667% - 1rem));
+}
+
+#plantsb-table .table-area .table-side #table-side-five a {
+  -webkit-transition: color 300ms ease-out;
+  transition: color 300ms ease-out;
+  color: #212121FF;
+  text-decoration: none;
+}
+
+#plantsb-table .table-area .table-side #table-side-five a:hover span {
+  background-color: #FF9030FF;
+}
+
+#plantsb-table .table-area .table-side #table-side-five a span {
+  width: 7.33333333333333%;
+  display: block;
+  background: #224433;
+  height: 8px;
+  border-radius: 4px;
+  margin-bottom: 2px;
+  -webkit-transition: color 300ms ease-out;
+  transition: color 300ms ease-out;
+}
+
 #plantsb-three h2 {
   position: relative;
   display: -webkit-box;

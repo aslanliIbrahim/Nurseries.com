@@ -141,6 +141,172 @@
         }
     }
 }
+#plantsb-table{
+    .table-title{
+        h2{
+            @include textFont(
+                $text_weight:bold,
+                $text_align:center,
+                $transform:uppercase,
+                $f_color:$main-color,
+                $f_size:30px,
+                $line_height:1.2,
+                $margin:16px
+            );
+            letter-spacing: 0;
+        }
+    }
+    .table-area{
+        position: relative;
+        padding: 4rem 1rem 1rem;
+        margin-bottom: 1rem;
+        background: #f0f0f0;
+        overflow: hidden;
+        border: 1rem solid #224433;
+        .table-monhts{
+            position: absolute;
+            top: 0;
+            left: 1rem;
+            bottom: 0;
+            right: 1rem;
+            display: flex;
+            width: calc(100% - 2rem);
+            height: auto;
+            .table-monht{
+                @include flexible(
+                    flex,
+                    center,
+                    center,
+                    column
+                );
+                @include textFont(
+                    $f_size:0.74rem
+                );
+               
+            }
+        }
+        .table-side{
+            position: relative;
+            z-index: 1;
+            .table-side-inside{
+                transform: translateX(calc(13.3333333333333% - 1rem));
+                a{
+                    transition: color 300ms ease-out;
+                    color: $black;
+                    text-decoration: none;
+                    &:hover{
+                        span{
+                            background-color: $main-color;
+                        }
+                    }
+                    span{   
+                        width: 7.33333333333333%;
+                        display: block;
+                        background: #224433;
+                        height: 8px;
+                        border-radius: 4px;
+                        margin-bottom: 2px;
+                        transition: color 300ms ease-out;
+                    }
+                }
+            }
+            #table-side-two{
+                transform: translateX(calc(16.6666666666667% - 1rem));
+                a{
+                    transition: color 300ms ease-out;
+                    color: $black;
+                    text-decoration: none;
+                    &:hover{
+                        span{
+                            background-color: $main-color;
+
+                        }
+                    }
+                    span{   
+                        width: 7.33333333333333%;
+                        display: block;
+                        background: #224433;
+                        height: 8px;
+                        border-radius: 4px;
+                        margin-bottom: 2px;
+                        transition: color 300ms ease-out;
+                    }
+                }
+            }
+            #table-side-three{
+                transform: translateX(calc(46.6666666666667% - 1rem));
+                a{
+                    transition: color 300ms ease-out;
+                    color: $black;
+                    text-decoration: none;
+                    &:hover{
+                        span{
+                            background-color: $main-color;
+
+                        }
+                    }
+                    span{   
+                        width: 7.33333333333333%;
+                        display: block;
+                        background: #224433;
+                        height: 8px;
+                        border-radius: 4px;
+                        margin-bottom: 2px;
+                        transition: color 300ms ease-out;
+                    }
+                }
+            }
+            #table-side-four{
+                transform: translateX(calc(53.3333333333333% - 1rem));
+                a{
+                    transition: color 300ms ease-out;
+                    color: $black;
+                    text-decoration: none;
+                    &:hover{
+                        span{
+                            background-color: $main-color;
+
+                        }
+                    }
+                    span{   
+                        width: 7.33333333333333%;
+                        display: block;
+                        background: #224433;
+                        height: 8px;
+                        border-radius: 4px;
+                        margin-bottom: 2px;
+                        transition: color 300ms ease-out;
+                    }
+                }
+            }
+            #table-side-five{
+                transform: translateX(calc(60.6666666666667% - 1rem));
+                a{
+                    transition: color 300ms ease-out;
+                    color: $black;
+                    text-decoration: none;
+                    &:hover{
+                        span{
+                            background-color: $main-color;
+
+                        }
+                    }
+                    span{   
+                        width: 7.33333333333333%;
+                        display: block;
+                        background: #224433;
+                        height: 8px;
+                        border-radius: 4px;
+                        margin-bottom: 2px;
+                        transition: color 300ms ease-out;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
 #plantsb-three{
     h2{
         position: relative;

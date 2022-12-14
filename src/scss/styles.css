@@ -2921,7 +2921,7 @@ footer .footer-down .wrap-signature a:hover {
   top: 50%;
   left: 1rem;
   font-weight: bold;
-  z-index: 9;
+  z-index: 1;
   letter-spacing: 0;
 }
 

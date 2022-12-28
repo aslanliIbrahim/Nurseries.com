@@ -1,10 +1,11 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 3;
+  z-index: +99;
   background-color: #FFFF;
   -webkit-box-shadow: -1px 0px 20px 6px rgba(0, 0, 0, 0.5);
           box-shadow: -1px 0px 20px 6px rgba(0, 0, 0, 0.5);
@@ -3042,6 +3043,401 @@ footer .footer-down .wrap-signature a:hover {
   text-align: left;
   color: #616161;
   letter-spacing: 0px;
+}
+
+main #main-head .page {
+  z-index: +11 !important;
+  position: relative;
+  padding: 10rem 0;
+  text-align: center;
+  background: url(../img/company-image/Milis-Agronomist-.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main #main-head .page h1 {
+  font-size: 60px;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 10px;
+  font-family: "open sans", helvetica, sans-serif;
+}
+
+main #main-head .page ul {
+  padding-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #main-head .page ul li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: -webkit-gradient(linear, left top, right top, from(#FF9030FF), color-stop(50%, #FF9030FF), color-stop(50%, #ffffff));
+  background-image: linear-gradient(to right, #FF9030FF, #FF9030FF 50%, #ffffff 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+main #main-head .page ul li a::before {
+  content: "";
+  background: #FF9030FF;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+main #main-head .page ul li a:hover {
+  background-position: 0;
+}
+
+main #main-head .page ul li a:hover::before {
+  width: 100%;
+}
+
+main #main-head .page ul i {
+  color: #FF9030FF;
+  padding: 0 10px;
+}
+
+main #main-head .page .overlay {
+  z-index: -99;
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(https://demo.themefisher.com/bizcraft/images/overaly.png);
+}
+
+main #main-content .container {
+  position: relative;
+}
+
+main #main-content .container .watermark {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  width: 100%;
+  height: 200px;
+  color: #000000;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+main #main-content .container .watermark::before {
+  content: attr(data-watermark);
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  font-size: 118px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  width: calc(100vw - 35px);
+  height: 100%;
+  -webkit-transform: translate(-50%, -25%);
+          transform: translate(-50%, -25%);
+  color: #f0f0f0;
+  font-family: "Fira Sans Condensed", sans-serif;
+  letter-spacing: 0;
+}
+
+main #main-content .container .circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 300px;
+  height: 300px;
+  -webkit-transform: translate(30%, -40%);
+          transform: translate(30%, -40%);
+  border-radius: 50%;
+  border: 2px solid #ff9030;
+}
+
+main #main-content .container .circle::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: -1;
+  border-radius: 50%;
+  border: 2px solid #ff9030;
+  width: 200px;
+  height: 200px;
+}
+
+main #main-content .container .circle::after {
+  content: "";
+  position: absolute;
+  top: 90px;
+  left: 90px;
+  z-index: -1;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #ff9030;
+}
+
+main #main-content .container .card-text {
+  padding: 0 30px;
+}
+
+main #main-content .container .card-text h2 {
+  font-size: 30px;
+  line-height: 1.2;
+  text-transform: none;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #212121;
+  margin-bottom: 20px;
+}
+
+main #main-content .container .card-text p {
+  margin: 20px 0 24px 0;
+  padding: 0;
+  letter-spacing: 0px;
+  color: #616161;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "open sans", helvetica, sans-serif;
+}
+
+main #main-content .container .expos-img {
+  width: 100vw;
+  position: relative;
+  left: 49%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+main #main-content .container .expos-img img {
+  max-width: 100%;
+  height: auto !important;
+  border: 0;
+  vertical-align: bottom;
+  margin: 0;
+}
+
+main #main-content .container .expos-card .left-text {
+  color: #ffffff;
+  background-color: #224433 !important;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #main-content .container .expos-card .left-text h2 {
+  text-align: center;
+  font-size: 30px;
+  line-height: 1.2;
+  text-transform: none;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+main #main-content .container .expos-card img {
+  max-width: 100%;
+  height: auto !important;
+  border: 0;
+  vertical-align: bottom;
+  margin: 0;
+}
+
+main #main-content .container .mission-text .watermarkk {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  width: 100%;
+  height: 200px;
+  color: #000000;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+main #main-content .container .mission-text .watermarkk::before {
+  content: attr(data-watermark);
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #f0f0f0;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 70px;
+  letter-spacing: 0;
+}
+
+main #main-content .container .mission-text ul li {
+  list-style: none;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+main #main-content .container .mission-text ul li span {
+  background-color: #FF9030FF;
+  padding: 6px 8px;
+  border-radius: 50%;
+  color: #ffffff;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+main #main-end {
+  margin: 60px 0;
+}
+
+main #main-end .video-container {
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0;
+  padding-bottom: 56.25%;
+  margin: auto;
+  overflow: hidden;
+}
+
+main #main-end .video-container iframe {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+main #main-end a {
+  text-decoration: none;
+  color: #000000;
+}
+
+main #main-end .passage-card .passage-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main #main-end .passage-card .passage-img img {
+  width: 300px;
+  height: 200px;
+}
+
+main #main-end .passage-card .passage-text {
+  padding-top: 20px;
+}
+
+main #main-end .passage-card .passage-text h4 {
+  color: #000000;
+  font-weight: bold;
+}
+
+main #main-end .passage-card .passage-text p {
+  text-align: center;
+}
+
+main #main-end .passage-card .passage-text button {
+  background-color: #FF9030FF;
+  width: 100%;
+  border: none;
+  padding: 5px;
+}
+
+#button {
+  display: inline-block;
+  background: #ffffff;
+  text-align: center;
+  width: 45px;
+  height: 50px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  z-index: 1;
+  border: none;
+  padding: 12px;
+  -webkit-box-shadow: 0px 0 24px 0px rgba(0, 0, 0, 0.111);
+          box-shadow: 0px 0 24px 0px rgba(0, 0, 0, 0.111);
+}
+
+#button i {
+  color: #000000;
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: #FF9030FF;
+}
+
+#button:hover i {
+  color: #ffffff;
 }
 
 * {

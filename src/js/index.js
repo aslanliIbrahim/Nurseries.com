@@ -94,14 +94,14 @@ var counter_durationn = 2;
 
 var myCounterr = setInterval(myTimerrr, counter_duration);
 
-function myTimerrr() {
-  counter_number3++;
-  console.log("myTimer");
-  document.getElementById("counter_texttt").innerHTML = counter_number3;
-  if (counter_number3 === numberOfUsers3) {
-    return myStopFunction();
-  }
-}
+// function myTimerrr() {
+//   counter_number3++;
+//   console.log("myTimer");
+//   document.getElementById("counter_texttt").innerHTML = counter_number3;
+//   if (counter_number3 === numberOfUsers3) {
+//     return myStopFunction();
+//   }
+// }
 
 function myStopFunction() {
   console.log("MY STOP FUNCTIOn");

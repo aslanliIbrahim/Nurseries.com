@@ -13,13 +13,13 @@
     <title>Company page</title>
 </head>
 <body>
-    <a id="button"><i class="bi bi-chevron-up"></i></i></a>
+    <a href="#" class="button"><i class="bi bi-chevron-up"></i></a>
     <header>
         <nav>
-            <div class="container-fluid">
+            <div class="container-fluid" id="burgerno">
                 <div class="row">
                     <div class="col-md-1 logo-area p-0">
-                        <a href="">
+                        <a href="index.html">
                             <img src="../src/img/main-image/logo_retina.png" alt="">
                         </a>
                     </div>
@@ -187,7 +187,7 @@
                                 </div>
                             </li>
                             <li class="main-li">
-                                <a href="" class="main-a">
+                                <a href="/pages/company.html" class="main-a">
                                     Company
                                 </a>
                                 <div class="sub-menu-two">
@@ -208,7 +208,7 @@
                                 </div>
                             </li>
                             <li class="main-li">
-                                <a href="" class="main-a">
+                                <a href="/pages/services.html" class="main-a">
                                     Services
                                 </a>
                                 <div class="sub-menu-two">
@@ -229,7 +229,7 @@
                                 </div>
                             </li>
                             <li class="main-li">
-                                <a href="" class="main-a">
+                                <a href="/pages/usefulplant.html" class="main-a">
                                     Useful Info
                                 </a>
                                 <div class="sub-menu-two">
@@ -250,12 +250,12 @@
                                 </div>
                             </li>
                             <li class="main-li">
-                                <a href="" class="main-a">
+                                <a href="/pages/blog.html" class="main-a">
                                     Blog
                                 </a>
                             </li>
                             <li class="main-li">
-                                <a href="" class="main-a">
+                                <a href="/pages/contact.html" class="main-a">
                                     Contact
                                 </a>
                             </li>
@@ -301,18 +301,45 @@
                     </div>
                 </div>
             </div>
+            <div class="burgerlist">
+                <a href="index.html">
+                    <img src="../src/img/main-image/logo_retina.png" alt="">
+                </a>
+
+                <div id="mySidepanel" class="sidepanel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">Home</a>
+                    <a href="/pages/plants.html">Plants</a>
+                    <a href="/pages/company.html">Company</a>
+                    <a href="/pages/services.html">Services</a>
+                    <a href="/pages/usefulplant.html">Useful info</a>
+                    <a href="/pages/blog.html">Blog</a>
+                    <a href="/pages/contact.html">Contact</a>
+
+                    <div class="search">
+                        <input type="text" placeholder="Search...">
+                        <i class="bi bi-search"></i>
+                    </div>
+                    <div class="mainbtn"><button>
+                        Calculator <i class="bi bi-chevron-right"></i>
+                    </button> </div>
+                  </div>
+
+                  
+                  <button class="openbtn" onclick="openNav()">&#9776;</button>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section id="main-head">
+        <section id="main-headd">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12 p-0">
                         <div class="page">
                             <h1>Milis fruit tree nurseries</h1>
                             <ul class="breadcrumb">
-                                <li><a href="" title="Home">Home </a></li>
+                                <li><a href="../index.html" title="Home">Home </a></li>
                                 <i class="bi bi-chevron-right"></i>
                                 <li><a href="" title="Company">Company</a></li>
                             </ul>
@@ -354,13 +381,13 @@
             <div class="row mt-5">
                 <div class="col-lg-6">
                     <div class="mission-img">
-                        <img src="../src/img/company-image/Milis-Planting.jpg" alt="">
+                        <img style="width: 100%;" src="../src/img/useful-info/Milis-Planting1.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="mission-text">
                         <h2 class="watermarkk" data-watermark="OUR MISSION" data-watermark-center="">OUR MISSION</h2>
-                        <ul>
+                        <ul >
                         <li> <span>01</span> Healthy, hgh quality plants</li>
                         <li> <span>02</span> Specialization in every stage</li>
                         <li> <span>03</span>Professionalism and Responsibility</li>
@@ -395,7 +422,7 @@
                                     <img src="../src/img/company-image/Milis-Bussines-2.jpg" alt="">
                                 </div>
                                 <div class="passage-text">
-                                    <h4>The methodology we apply to the production of seedlings</h4>
+                                    <h4>The methodology apply</h4>
                                     <p>Mother plantations Our company is based on the philosophy that it has to deliver plants that are : ...</p>
                                     <button>More</button>
                                 </div>
@@ -406,10 +433,10 @@
                         <a href="#">
                             <div class="passage-card">
                                 <div class="passage-img">
-                                    <img src="../src/img/company-image/Milis-GreenHouse.jpg" alt="">
+                                    <img src="../src/img/company-image/Milis-Agronomist-.jpg" alt="">
                                 </div>
                                 <div class="passage-text">
-                                    <h4>The methodology we apply to the production of seedlings</h4>
+                                    <h4>Plant shipping</h4>
                                     <p>Mother plantations Our company is based on the philosophy that it has to deliver plants that are : ...</p>
                                     <button>More</button>
                                 </div>
@@ -423,7 +450,7 @@
                                     <img src="../src/img/company-image/fytoria-milis-fp.jpg" alt="">
                                 </div>
                                 <div class="passage-text">
-                                    <h4>The methodology we apply to the production of seedlings</h4>
+                                    <h4>Mother Tree Orchard</h4>
                                     <p>Mother plantations Our company is based on the philosophy that it has to deliver plants that are : ...</p>
                                     <button>More</button>
                                 </div>
@@ -437,7 +464,7 @@
                                     <img src="../src/img/company-image/Experimintal-Ochard.jpg" alt="">
                                 </div>
                                 <div class="passage-text">
-                                    <h4>The methodology we apply to the production of seedlings</h4>
+                                    <h4>Experimental Orchard</h4>
                                     <p>Mother plantations Our company is based on the philosophy that it has to deliver plants that are : ...</p>
                                     <button>More</button>
                                 </div>
@@ -447,14 +474,12 @@
                 </div>
             </div>
         </section>
+
+        
     </main>
 
 
-
-
-
-
-     <footer>
+    <footer>
         <div class="container-fluid footer-up">
             <div class="row">
                 <div class="col-12 col-sm-5 col-xl-3 footer-img-side">
@@ -526,7 +551,7 @@
                             </h2>
                             <ul>
                                 <li>
-                                    <a href="">
+                                    <a href="index.html">
                                         Home
                                     </a>
                                 </li>
@@ -536,22 +561,22 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="">
+                                    <a href="/pages/company.html">
                                         Company
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="">
+                                    <a href="/pages/services.html">
                                         Services
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="">
+                                    <a href="/pages/usefulplant.html">
                                         Useful info
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="">
+                                    <a href="/pages/blog.html">
                                         Blog
                                     </a>
                                 </li>
@@ -704,9 +729,7 @@
                 </div>
             </div>
         </div>
-    </footer> 
-
-
+    </footer>  
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -714,6 +737,7 @@
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="../src/js/owl-js/owl.carousel.min.js"></script>
     <script src="../src/js/company.js"></script>
+    <script src="../src/js/contact.js"></script>
     <script src="../src/js/index.js"></script>
 </body>
 </html>

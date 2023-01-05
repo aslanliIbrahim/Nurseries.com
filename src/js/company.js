@@ -1,14 +1,10 @@
-var btn = $('#button');
+const totop = document.querySelector(".button");
 
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
-});
+window.addEventListener("scroll", ()=>{
+    if(window.pageYOffset >100){
+        totop.classList.add("active");
+    }else{
+        totop.classList.remove("active");
+    }
+})
 
-btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '300');
-});

@@ -1,13 +1,16 @@
+html{
+    scroll-behavior: smooth;
+}
 main {
-    #main-head {
+    #main-headd {
         .page {
             z-index: +11 !important;
             position: relative;
             padding: 10rem 0;
             text-align: center;
-            background: url(../img/company-image/Milis-Agronomist-.jpg);
+            background: url(../img/company-image/Milis-Agronomist-.jpg) !important;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: cover !important;
 
             h1 {
                 font-size: 60px;
@@ -145,10 +148,10 @@ main {
                     content: "";
                     position: absolute;
                     top: 90px;
-                    left: 90px;
+                    left: 95px;
                     z-index: -1;
-                    width: 120px;
-                    height: 120px;
+                    width: 108px;
+                    height: 112px;
                     border-radius: 50%;
                     border: 2px solid #ff9030;
                 }
@@ -342,8 +345,7 @@ main {
     }
 
 }
-
-#button {
+.button {
     display: inline-block;
     background: #ffffff;
     text-align: center;
@@ -356,18 +358,99 @@ main {
     z-index: 1;
     border: none;
     padding: 12px;
+    opacity: 0;
     box-shadow: 0px 0 24px 0px rgba(0, 0, 0, 0.111);
-
     i {
         color: #000000;
     }
-}
-
-#button:hover {
+    &:hover{
     cursor: pointer;
     background-color: $main-color;
-
     i {
         color: #ffffff;
     }
+    }
+}
+.button.active{
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    #burgerno{
+        display: none;
+    }
+    .page{
+        padding: 2rem 0 !important;
+       h1{
+        font-size: 40px !important;
+        letter-spacing: normal !important;
+       }
+       a{
+           font-size: 12px !important;
+        }
+        i{
+            padding: 6px 8px 0 8px !important;
+            font-size: 10px !important;
+        }
+       ul{
+        padding-top: 0px !important;
+       }
+    }
+    #main-content{
+        .watermark{
+            &::before{
+                letter-spacing: -4px !important;
+                font-size: 60px !important;
+                line-height: 50px !important;
+                z-index: +11 !important;
+            }
+        }
+        .circle{
+             transform: translate(-14%, -55%) !important;
+        }
+        h2{
+            font-size: 22px !important;
+        }
+        p{
+            font-size: 15px !important;
+        }
+        .mission-img{
+            img{
+                width: 100%;
+            }
+        }
+        .expos-img{
+            left: 50% !important;
+        }
+        .mission-text{
+            .watermarkk{
+                &::before{
+                    font-size: 45px !important;
+                }
+            }
+            ul{
+                padding-left: 0px !important;
+            }
+        }
+    }
+    #main-end{
+        .passage-card{
+            margin-bottom: 30px !important;
+            padding: 1rem !important;
+            .passage-img{
+                img{
+                    width: 340px !important;
+                    height: 230px !important;
+                }
+            }
+            .passage-text{
+                h4{
+                    font-size: 15px !important;
+                    padding-left: 10px !important; 
+                }
+            }
+        }
+    }
+    
+
 }

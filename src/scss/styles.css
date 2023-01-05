@@ -3045,17 +3045,21 @@ footer .footer-down .wrap-signature a:hover {
   letter-spacing: 0px;
 }
 
-main #main-head .page {
+html {
+  scroll-behavior: smooth;
+}
+
+main #main-headd .page {
   z-index: +11 !important;
   position: relative;
   padding: 10rem 0;
   text-align: center;
-  background: url(../img/company-image/Milis-Agronomist-.jpg);
+  background: url(../img/company-image/Milis-Agronomist-.jpg) !important;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover !important;
 }
 
-main #main-head .page h1 {
+main #main-headd .page h1 {
   font-size: 60px;
   font-weight: 600;
   color: white;
@@ -3063,7 +3067,7 @@ main #main-head .page h1 {
   font-family: "open sans", helvetica, sans-serif;
 }
 
-main #main-head .page ul {
+main #main-headd .page ul {
   padding-top: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3073,7 +3077,7 @@ main #main-head .page ul {
           justify-content: center;
 }
 
-main #main-head .page ul li a {
+main #main-headd .page ul li a {
   color: white;
   font-weight: bold;
   text-decoration: none;
@@ -3090,7 +3094,7 @@ main #main-head .page ul li a {
   transition: all 0.3s ease-in-out;
 }
 
-main #main-head .page ul li a::before {
+main #main-headd .page ul li a::before {
   content: "";
   background: #FF9030FF;
   display: block;
@@ -3103,20 +3107,20 @@ main #main-head .page ul li a::before {
   transition: all 0.3s ease-in-out;
 }
 
-main #main-head .page ul li a:hover {
+main #main-headd .page ul li a:hover {
   background-position: 0;
 }
 
-main #main-head .page ul li a:hover::before {
+main #main-headd .page ul li a:hover::before {
   width: 100%;
 }
 
-main #main-head .page ul i {
+main #main-headd .page ul i {
   color: #FF9030FF;
   padding: 0 10px;
 }
 
-main #main-head .page .overlay {
+main #main-headd .page .overlay {
   z-index: -99;
   position: absolute;
   content: " ";
@@ -3206,10 +3210,10 @@ main #main-content .container .circle::after {
   content: "";
   position: absolute;
   top: 90px;
-  left: 90px;
+  left: 95px;
   z-index: -1;
-  width: 120px;
-  height: 120px;
+  width: 108px;
+  height: 112px;
   border-radius: 50%;
   border: 2px solid #ff9030;
 }
@@ -3409,7 +3413,7 @@ main #main-end .passage-card .passage-text button {
   padding: 5px;
 }
 
-#button {
+.button {
   display: inline-block;
   background: #ffffff;
   text-align: center;
@@ -3423,21 +3427,737 @@ main #main-end .passage-card .passage-text button {
   z-index: 1;
   border: none;
   padding: 12px;
+  opacity: 0;
   -webkit-box-shadow: 0px 0 24px 0px rgba(0, 0, 0, 0.111);
           box-shadow: 0px 0 24px 0px rgba(0, 0, 0, 0.111);
 }
 
-#button i {
+.button i {
   color: #000000;
 }
 
-#button:hover {
+.button:hover {
   cursor: pointer;
   background-color: #FF9030FF;
 }
 
-#button:hover i {
+.button:hover i {
   color: #ffffff;
+}
+
+.button.active {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  #burgerno {
+    display: none;
+  }
+  .page {
+    padding: 2rem 0 !important;
+  }
+  .page h1 {
+    font-size: 40px !important;
+    letter-spacing: normal !important;
+  }
+  .page a {
+    font-size: 12px !important;
+  }
+  .page i {
+    padding: 6px 8px 0 8px !important;
+    font-size: 10px !important;
+  }
+  .page ul {
+    padding-top: 0px !important;
+  }
+  #main-content .watermark::before {
+    letter-spacing: -4px !important;
+    font-size: 60px !important;
+    line-height: 50px !important;
+    z-index: +11 !important;
+  }
+  #main-content .circle {
+    -webkit-transform: translate(-14%, -55%) !important;
+            transform: translate(-14%, -55%) !important;
+  }
+  #main-content h2 {
+    font-size: 22px !important;
+  }
+  #main-content p {
+    font-size: 15px !important;
+  }
+  #main-content .mission-img img {
+    width: 100%;
+  }
+  #main-content .expos-img {
+    left: 50% !important;
+  }
+  #main-content .mission-text .watermarkk::before {
+    font-size: 45px !important;
+  }
+  #main-content .mission-text ul {
+    padding-left: 0px !important;
+  }
+  #main-end .passage-card {
+    margin-bottom: 30px !important;
+    padding: 1rem !important;
+  }
+  #main-end .passage-card .passage-img img {
+    width: 340px !important;
+    height: 230px !important;
+  }
+  #main-end .passage-card .passage-text h4 {
+    font-size: 15px !important;
+    padding-left: 10px !important;
+  }
+}
+
+main .main-head-1 .page {
+  z-index: +11 !important;
+  position: relative;
+  padding: 10rem 0;
+  text-align: center;
+}
+
+main .main-head-1 .page::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: calc(50% - 9px);
+  width: 100vw;
+  height: 100%;
+  background: url("../img/plant-image/speciesbg.jpg") 50% 50%/cover no-repeat #224433;
+  -webkit-transform: translate(-50vw, -50%);
+          transform: translate(-50vw, -50%);
+}
+
+main .main-head-1 .page h1 {
+  font-size: 60px;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 10px;
+  font-family: "open sans", helvetica, sans-serif;
+}
+
+main .main-head-1 .page ul {
+  padding-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .main-head-1 .page ul li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: -webkit-gradient(linear, left top, right top, from(#FF9030FF), color-stop(50%, #FF9030FF), color-stop(50%, #ffffff));
+  background-image: linear-gradient(to right, #FF9030FF, #FF9030FF 50%, #ffffff 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+main .main-head-1 .page ul li a::before {
+  content: "";
+  background: #FF9030FF;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+main .main-head-1 .page ul li a:hover {
+  background-position: 0;
+}
+
+main .main-head-1 .page ul li a:hover::before {
+  width: 100%;
+}
+
+main .main-head-1 .page ul i {
+  color: #FF9030FF;
+  padding: 0 10px;
+}
+
+main #main-content .blog-item {
+  margin-bottom: 3rem;
+}
+
+main #main-content .blog-item img {
+  max-width: 100%;
+}
+
+main #main-content .blog-item .badge {
+  padding: 0.5rem 1.2rem;
+  border-radius: 0;
+  font-size: 2.5rem;
+  color: #000000;
+  line-height: 2.5rem;
+  font-weight: normal;
+  text-align: center;
+  background: #FF9030FF !important;
+}
+
+main #main-content .blog-item .badge span {
+  font-size: 1rem;
+  line-height: 1rem;
+  display: block;
+  letter-spacing: 5px;
+}
+
+main #main-content .blog-item .text-right {
+  text-align: right;
+}
+
+main #main-content .blog-item .text-right a {
+  background-color: #FF9030FF;
+  border: none;
+  border-radius: 0;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  color: #000000;
+}
+
+main #main-content .blog-item .text-right a i {
+  color: #000000;
+}
+
+main #main-content .blog-item .text-right a:hover {
+  background-color: #212529;
+  color: #ffffff;
+}
+
+main #main-content .blog-item .text-right a:hover i {
+  color: #ffffff;
+}
+
+main #main-content .blog-calendar {
+  margin-left: 140px;
+}
+
+main #main-content .blog-calendar .nav-blog li {
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #main-content .blog-calendar .nav-blog li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+main #main-content .blog-calendar .nav-blog li .badgee {
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  margin-left: auto !important;
+  line-height: 32px;
+}
+
+@media (max-width: 768px) {
+  .page::before {
+    background: url(../img/company-image/fytoriamilis-02.jpg) 50% 50%/cover no-repeat !important;
+  }
+  .blog-calendar {
+    margin: 0 !important;
+  }
+}
+
+main .main-head .page {
+  z-index: +11 !important;
+  position: relative;
+  padding: 10rem 0;
+  text-align: center;
+}
+
+main .main-head .page::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: calc(50% - 9px);
+  width: 100vw;
+  height: 100%;
+  background: url("../img/useful-info/Milis-Planting1.jpg") 50% 50%/cover no-repeat #224433;
+  -webkit-transform: translate(-50vw, -50%);
+          transform: translate(-50vw, -50%);
+}
+
+main .main-head .page h1 {
+  letter-spacing: 10px;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #FFFF;
+  text-align: center;
+}
+
+main .main-head .page ul {
+  padding-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .main-head .page ul li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: -webkit-gradient(linear, left top, right top, from(#FF9030FF), color-stop(50%, #FF9030FF), color-stop(50%, #ffffff));
+  background-image: linear-gradient(to right, #FF9030FF, #FF9030FF 50%, #ffffff 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+main .main-head .page ul li a::before {
+  content: "";
+  background: #FF9030FF;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+main .main-head .page ul li a:hover {
+  background-position: 0;
+}
+
+main .main-head .page ul li a:hover::before {
+  width: 100%;
+}
+
+main .main-head .page ul i {
+  color: #FF9030FF;
+  padding: 0 10px;
+}
+
+main .main-head .page .overlay {
+  z-index: -99;
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(https://demo.themefisher.com/bizcraft/images/overaly.png);
+}
+
+main .main-content {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  main .main-content ul {
+    padding: 0px;
+  }
+}
+
+main .main-content ul li {
+  list-style: none;
+  margin-top: 20px;
+  font-weight: bold;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid #ff9030;
+}
+
+main .main-content ul li span {
+  background-color: #FF9030FF;
+  padding: 6px 8px;
+  border-radius: 50%;
+  color: #ffffff;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+main .main-content .card-img img {
+  height: 500px;
+}
+
+@media (max-width: 768px) {
+  main .main-content .card-img img {
+    height: 300px;
+  }
+}
+
+main #main-heading .page {
+  z-index: +11 !important;
+  position: relative;
+  padding: 10rem 0;
+  text-align: center;
+  background: url(../img/services-image/Milis-GreenHouse.jpg) 50% 50%/cover no-repeat !important;
+}
+
+main #main-heading .page h1 {
+  font-size: 60px;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 10px;
+  font-family: "open sans", helvetica, sans-serif;
+}
+
+main #main-heading .page ul {
+  padding-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #main-heading .page ul li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: -webkit-gradient(linear, left top, right top, from(#FF9030FF), color-stop(50%, #FF9030FF), color-stop(50%, #ffffff));
+  background-image: linear-gradient(to right, #FF9030FF, #FF9030FF 50%, #ffffff 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+main #main-heading .page ul li a::before {
+  content: "";
+  background: #FF9030FF;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+main #main-heading .page ul li a:hover {
+  background-position: 0;
+}
+
+main #main-heading .page ul li a:hover::before {
+  width: 100%;
+}
+
+main #main-heading .page ul i {
+  color: #FF9030FF;
+  padding: 0 10px;
+}
+
+.burgerlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.burgerlist img {
+  width: 100px;
+  padding-left: 20px;
+}
+
+.sidepanel {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 60px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.sidepanel a {
+  padding: 12px;
+  margin: 0 20px;
+  text-decoration: none;
+  color: #212121;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.sidepanel a:hover {
+  background-color: #FF9030FF;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  color: #c1bfbf;
+  top: 8px;
+  right: 14px;
+  font-size: 36px;
+  margin: 0;
+  margin-left: 50px;
+  border: none;
+}
+
+.sidepanel .closebtn:hover {
+  background-color: inherit;
+}
+
+.sidepanel .search {
+  position: relative;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sidepanel .search input {
+  color: #616161;
+  background-color: #ffffff;
+  border: 1px solid;
+  line-height: 16px;
+  padding: 14px 24px 14px 24px;
+}
+
+.sidepanel .search input:focus {
+  border: 1px solid;
+}
+
+.sidepanel .search i {
+  position: absolute;
+  right: 95px;
+  top: 13px;
+  font-size: 18px;
+}
+
+.sidepanel .mainbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.sidepanel .mainbtn button {
+  background-color: #FF9030FF;
+  padding: 10px 16px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+}
+
+.openbtn {
+  font-size: 25px;
+  cursor: pointer;
+  color: #c1bfbf;
+  padding: 10px 15px;
+  border: none;
+  background-color: inherit;
+}
+
+main #main-content ul {
+  padding-top: 20px;
+}
+
+main #main-content ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  font-weight: 600;
+  font-size: 20px;
+  color: #616161;
+  padding-top: 20px;
+}
+
+main #main-content ul li i {
+  color: #FF9030FF;
+  padding-right: 10px;
+}
+
+main #main-content ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+main #main-content .contact-img {
+  width: 100%;
+  height: 100%;
+}
+
+main #main-content .contact-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 500px;
+}
+
+main #main-ending {
+  background-color: #224433;
+}
+
+main #main-ending h2 {
+  color: white;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+main #main-ending form label {
+  margin-top: 10px;
+  color: white;
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+main #main-ending form input {
+  width: 96%;
+  height: 56px;
+  line-height: 16px;
+  padding: 14px 24px 14px 24px;
+  border: none;
+  margin-top: 10px;
+  outline: none;
+}
+
+main #main-ending form .flexing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+main #main-ending form .flexing div {
+  width: 48%;
+}
+
+main #main-ending form .check-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #main-ending form .check-1 input[type="checkbox"] {
+  padding: 0;
+  height: initial;
+  width: inherit;
+  accent-color: #3bea44;
+  outline: 2px solid #FF9030FF;
+  outline-offset: -2px;
+}
+
+main #main-ending form .check-1 p {
+  padding-left: 10px;
+  margin: 0;
+  color: white;
+  font-weight: 600;
+}
+
+main #main-ending button {
+  color: black;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: #FF9030FF;
+  padding: 12px 30px;
+  border: none;
+  margin: 14px 0px 60px;
+}
+
+@media (max-width: 768px) {
+  main .page {
+    background: url(../img/company-image/fytoriamilis-02.jpg) 50% 50%/cover no-repeat !important;
+  }
+  main .contact-img img {
+    display: none;
+  }
+  main ul {
+    padding: 0;
+  }
+  main .flexing {
+    display: block !important;
+  }
+  main .flexing div {
+    width: 100% !important;
+  }
+  main textarea {
+    width: 100% !important;
+  }
+  main input {
+    width: 100% !important;
+    display: block !important;
+  }
+  main .check-1 {
+    margin-top: 10px;
+  }
+  main .check-1 input {
+    width: initial !important;
+  }
+  main button {
+    margin-bottom: 0px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .burgerlist {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 * {

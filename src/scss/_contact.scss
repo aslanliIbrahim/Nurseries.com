@@ -1,0 +1,238 @@
+.burgerlist{
+    display: flex;
+    display: none;
+    justify-content: space-between;
+    img{
+        width: 100px;
+        padding-left: 20px;
+    }
+
+}
+.sidepanel {
+    height: 100%;
+    width: 0px; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color:white;
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+    a {
+        padding: 12px;
+        margin: 0 20px;
+        text-decoration: none;
+        color: #212121;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 600;
+        display: block;
+        transition: 0.3s;
+        border-bottom: 2px solid #eeeeee;
+        &:hover{
+            background-color:$main-color;
+        }
+      }
+      .closebtn {
+        position: absolute;
+        color:rgb(193, 191, 191);
+        top: 8px;
+        right: 14px;
+        font-size: 36px;
+        margin: 0;
+        margin-left: 50px;
+        border: none;
+        &:hover{
+            background-color: inherit;
+        }
+      }
+      .search{
+        position: relative;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        input{
+            color: #616161;
+            background-color: #ffffff;
+            border: 1px solid;
+            line-height: 16px;
+            padding: 14px 24px 14px 24px;
+
+            &:focus{
+                border: 1px solid;
+            }
+        }
+        i{
+            position: absolute;
+            right: 95px;
+            top: 13px;
+            font-size: 18px;
+        }
+
+      }
+      .mainbtn{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        button{
+            background-color: $main-color;
+            padding: 10px 16px;
+            font-size: 18px;
+            font-weight: 600;
+            border: none;
+        }
+      }
+  }
+  
+  .openbtn {
+    font-size: 25px;
+    cursor: pointer;
+    color:rgb(193, 191, 191);
+    padding: 10px 15px;
+    border: none;
+    background-color: inherit;
+  }
+  
+main{
+    #main-content{
+        ul{
+            padding-top: 20px;
+            li{
+                display: flex;
+                list-style: none;
+                font-weight: 600;
+                font-size: 20px;
+                color: #616161;
+                padding-top: 20px;
+                i{
+                    color: $main-color;
+                    padding-right: 10px;
+                }
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+
+            }
+        }
+        .contact-img{
+            width: 100%;
+            height: 100%;
+
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 500px;
+            }
+        }
+    }
+    #main-ending{
+        background-color:#224433 ;
+        h2{
+            color: white;
+            font-weight: 700;
+            font-size: 40px;
+        }
+
+        form{
+
+            label{
+                margin-top: 10px;
+                color: white;
+                display: block;
+                font-size: 16px;
+                font-weight: 600;
+                text-transform: uppercase;
+                
+            }
+            input{
+                width: 96%;
+                height: 56px;
+                line-height: 16px;
+                padding: 14px 24px 14px 24px;
+                border: none;
+                margin-top: 10px;
+                outline: none;
+            }
+            .flexing{
+                display: flex;
+                column-gap: 10px;
+                div{
+                    width: 48%;
+                }
+            }
+            .check-1{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                input[type="checkbox"]{
+                    padding: 0;
+                    height: initial;
+                    width: inherit;
+                    accent-color: #3bea44;
+                     outline:2px solid $main-color;
+                     outline-offset: -2px;
+                }
+                p{
+                    padding-left: 10px;
+                    margin: 0;
+                    color: white;
+                    font-weight: 600;
+                }
+            }
+
+        }
+        button{
+            color: black;
+            font-weight: 700;
+            font-size: 16px;
+            text-transform: uppercase;
+            background-color: $main-color;
+            padding: 12px 30px;
+            border: none;
+            margin: 14px 0px 60px;
+        }
+    }
+    @media (max-width:768px) {
+        .page{
+            background: url(../img/company-image/fytoriamilis-02.jpg) 50% 50% / cover no-repeat !important;
+        }
+        .contact-img{
+            img{
+                display: none;
+            }
+        }
+        ul{
+            padding: 0;
+        }
+        .flexing{
+            display: block !important;
+            div{
+                width: 100% !important;
+    
+            }
+        }
+        textarea{
+            width: 100% !important;
+        }
+        input{
+            width: 100% !important;
+            display: block !important;
+        }
+        .check-1{
+            margin-top: 10px;
+            input{
+                width: initial !important;
+            }
+        }
+        button{
+            margin-bottom:0px !important ;
+        }
+    }
+}
+@media (max-width:768px) {
+   .burgerlist{
+    display: flex;
+   }
+}

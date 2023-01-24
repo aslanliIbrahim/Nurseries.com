@@ -1,0 +1,85 @@
+#services-sub-one{
+    [data-name]{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        width: 100%;
+        height: 200px;
+        color: $black;
+        font-weight: bold;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        text-align: center;
+        &::before{
+            content: attr(data-name);
+            font-size: 150px;
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            width: calc(100vw - 20px);
+            height: 100%;
+            transform: translate(-50%, -50%);
+            color: #f0f0f0;
+        }
+        @media (max-width:992px) {
+            display: none;
+        }
+    }
+    .servicessub-first{
+        width: 75%;
+        @include textFont(
+            $text_align:center,
+            $line_height:1.5
+        );
+        h2{
+            @include textFont(
+                $f_size:30px,
+                $line_height:1.2
+            );
+            text-transform: uppercase;
+        }
+        p{
+            margin: 0 0 24px 0;
+            padding: 0;
+        }
+    }
+}
+#services-sub-two{
+    background-color: $bg-green;
+    padding: 5rem 0;
+    .sub-two-title{
+        height: 100%;
+        color: $white;
+        @include flexible(
+            flex,
+            center,
+            center,
+            column
+        );
+        h2{
+            @include textFont(
+                $text_align:center,
+                $line_height:1.2,
+                $f_size:30px,
+                $text_weight:700
+            );
+        }
+        p{
+            text-align: center;
+            margin: 0 0 24px 0;
+            padding: 0;
+        }
+    }
+    .sub-two-img{
+        img{
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}

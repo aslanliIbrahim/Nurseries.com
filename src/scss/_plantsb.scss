@@ -1,13 +1,14 @@
-#plantsb-one{
-    .plantsb-title-one{
+#plantsb-one {
+    .plantsb-title-one {
         padding: 18rem 0 0;
         display: flex;
         flex-direction: column;
         margin-bottom: 2rem;
         position: relative;
-        &::before{
+
+        &::before {
             content: "";
-            
+
             background: url("../img/plant-image/applebg.jpg") 50% 50% / cover no-repeat #224433;
             position: absolute;
             z-index: -1;
@@ -18,7 +19,8 @@
             height: 100%;
             transform: translate(-50vw, -50%);
         }
-        h1{
+
+        h1 {
             font-weight: bold;
             text-align: center;
             line-height: 1.2;
@@ -26,40 +28,40 @@
             letter-spacing: 10px;
             color: $white;
         }
-        ul{
+
+        ul {
             padding: 4rem 0 2rem 0;
             margin: 0;
             color: $white;
             list-style: none;
-            @include flexible(
-                flex,
+            @include flexible(flex,
                 center,
                 center,
-                row
-            );
-            li{
+                row);
+
+            li {
                 margin-right: 25px;
                 font-weight: 600;
                 font-size: 18px;
-                a{
+
+                a {
                     color: $white;
                     text-decoration: none;
                     background-position: -100%;
-                    background-image: linear-gradient(
-                        to right,
-                        $main-color,
-                        $main-color 50%,
-                        $white 50%
-                    );
+                    background-image: linear-gradient(to right,
+                            $main-color,
+                            $main-color 50%,
+                            $white 50%);
                     background-size: 200% 100%;
                     background-position: -100%;
                     display: inline-block;
-                    
+
                     position: relative;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     transition: all 0.3s ease-in-out;
-                    &::before{
+
+                    &::before {
                         content: '';
                         background: $main-color;
                         display: block;
@@ -70,16 +72,20 @@
                         height: 3px;
                         transition: all 0.3s ease-in-out;
                     }
-                    &:hover{
+
+                    &:hover {
                         background-position: 0;
                     }
-                    &:hover::before{
+
+                    &:hover::before {
                         width: 100%;
                     }
                 }
-                &:nth-child(2){
+
+                &:nth-child(2) {
                     position: relative;
-                    &::before{
+
+                    &::before {
                         content: ">";
                         color: $main-color;
                         position: absolute;
@@ -96,39 +102,40 @@
         }
     }
 }
-#plantsb-two{
-    .img-area{
-        @include flexible(
-            flex,
+
+#plantsb-two {
+    .img-area {
+        @include flexible(flex,
             center,
             center,
-            column
-        );
+            column);
         visibility: visible;
         max-width: 240px;
         margin: 0 auto;
-        h2{
+
+        h2 {
             position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    width: 100%;
-    height: 200px;
-    color: #000000;
-    font-weight: bold;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 30px;
-    line-height: 1.2;
-            &::before{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            width: 100%;
+            height: 200px;
+            color: #000000;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 30px;
+            line-height: 1.2;
+
+            &::before {
                 content: attr(data-content);
                 font-size: 200px;
                 position: absolute;
                 z-index: -1;
                 top: 50%;
-                left:50%;
+                left: 50%;
                 display: flex;
                 align-items: center;
                 justify-content: start;
@@ -141,29 +148,30 @@
         }
     }
 }
-#plantsb-table{
-    .table-title{
-        h2{
-            @include textFont(
-                $text_weight:bold,
-                $text_align:center,
-                $transform:uppercase,
-                $f_color:$main-color,
-                $f_size:30px,
-                $line_height:1.2,
-                $margin:16px
-            );
+
+#plantsb-table {
+    .table-title {
+        h2 {
+            @include textFont($text_weight: bold,
+                $text_align: center,
+                $transform: uppercase,
+                $f_color: $main-color,
+                $f_size: 30px,
+                $line_height: 1.2,
+                $margin: 16px);
             letter-spacing: 0;
         }
     }
-    .table-area{
+
+    .table-area {
         position: relative;
         padding: 4rem 1rem 1rem;
         margin-bottom: 1rem;
         background: #f0f0f0;
         overflow: hidden;
         border: 1rem solid #224433;
-        .table-monhts{
+
+        .table-monhts {
             position: absolute;
             top: 0;
             left: 1rem;
@@ -172,34 +180,36 @@
             display: flex;
             width: calc(100% - 2rem);
             height: auto;
-            .table-monht{
-                @include flexible(
-                    flex,
+
+            .table-monht {
+                @include flexible(flex,
                     center,
                     center,
-                    column
-                );
-                @include textFont(
-                    $f_size:0.74rem
-                );
-               
+                    column);
+                @include textFont($f_size: 0.74rem);
+
             }
         }
-        .table-side{
+
+        .table-side {
             position: relative;
             z-index: 1;
-            .table-side-inside{
+
+            .table-side-inside {
                 transform: translateX(calc(13.3333333333333% - 1rem));
-                a{
+
+                a {
                     transition: color 300ms ease-out;
                     color: $black;
                     text-decoration: none;
-                    &:hover{
-                        span{
+
+                    &:hover {
+                        span {
                             background-color: $main-color;
                         }
                     }
-                    span{   
+
+                    span {
                         width: 7.33333333333333%;
                         display: block;
                         background: #224433;
@@ -210,19 +220,23 @@
                     }
                 }
             }
-            #table-side-two{
+
+            #table-side-two {
                 transform: translateX(calc(16.6666666666667% - 1rem));
-                a{
+
+                a {
                     transition: color 300ms ease-out;
                     color: $black;
                     text-decoration: none;
-                    &:hover{
-                        span{
+
+                    &:hover {
+                        span {
                             background-color: $main-color;
 
                         }
                     }
-                    span{   
+
+                    span {
                         width: 7.33333333333333%;
                         display: block;
                         background: #224433;
@@ -233,19 +247,23 @@
                     }
                 }
             }
-            #table-side-three{
+
+            #table-side-three {
                 transform: translateX(calc(46.6666666666667% - 1rem));
-                a{
+
+                a {
                     transition: color 300ms ease-out;
                     color: $black;
                     text-decoration: none;
-                    &:hover{
-                        span{
+
+                    &:hover {
+                        span {
                             background-color: $main-color;
 
                         }
                     }
-                    span{   
+
+                    span {
                         width: 7.33333333333333%;
                         display: block;
                         background: #224433;
@@ -256,19 +274,23 @@
                     }
                 }
             }
-            #table-side-four{
+
+            #table-side-four {
                 transform: translateX(calc(53.3333333333333% - 1rem));
-                a{
+
+                a {
                     transition: color 300ms ease-out;
                     color: $black;
                     text-decoration: none;
-                    &:hover{
-                        span{
+
+                    &:hover {
+                        span {
                             background-color: $main-color;
 
                         }
                     }
-                    span{   
+
+                    span {
                         width: 7.33333333333333%;
                         display: block;
                         background: #224433;
@@ -279,19 +301,23 @@
                     }
                 }
             }
-            #table-side-five{
+
+            #table-side-five {
                 transform: translateX(calc(60.6666666666667% - 1rem));
-                a{
+
+                a {
                     transition: color 300ms ease-out;
                     color: $black;
                     text-decoration: none;
-                    &:hover{
-                        span{
+
+                    &:hover {
+                        span {
                             background-color: $main-color;
 
                         }
                     }
-                    span{   
+
+                    span {
                         width: 7.33333333333333%;
                         display: block;
                         background: #224433;
@@ -307,8 +333,8 @@
     }
 }
 
-#plantsb-three{
-    h2{
+#plantsb-three {
+    h2 {
         position: relative;
         display: flex;
         align-items: center;
@@ -321,14 +347,16 @@
         letter-spacing: 3px;
         text-transform: uppercase;
         text-align: center;
-        span{
+
+        span {
             color: #000000;
             font-weight: bold;
             letter-spacing: 3px;
             text-transform: uppercase;
             text-align: center;
         }
-        &::before{
+
+        &::before {
             content: attr(data-content);
             position: absolute;
             z-index: -1;
@@ -347,20 +375,22 @@
     }
 
 }
-#plantsb-four{
+
+#plantsb-four {
     position: relative;
-    &::before{
+
+    &::before {
         content: '';
-    position: absolute;
-    top: 8rem;
-    bottom: 8rem;
-    left: 0;
-    right: 0;
-    z-index: 0;
-    background: #224433;
+        position: absolute;
+        top: 8rem;
+        bottom: 8rem;
+        left: 0;
+        right: 0;
+        z-index: 0;
+        background: #224433;
     }
 
-    .circle-area{
+    .circle-area {
         border-width: 2px;
         position: absolute;
         top: 0;
@@ -371,7 +401,8 @@
         transform: translate(50%, -50%);
         border-radius: 12rem 0 0 12rem;
         border: 1px solid #ff9030;
-        &::before{
+
+        &::before {
             content: '';
             position: absolute;
             top: 29px;
@@ -382,7 +413,8 @@
             border-radius: 12rem 0 0 12rem;
             border: 1px solid #ff9030;
         }
-        &::after{
+
+        &::after {
             content: '';
             position: absolute;
             top: 60px;
@@ -394,11 +426,14 @@
             border: 1px solid #ff9030;
         }
     }
-    .plantsb-card{
+
+    .plantsb-card {
         margin-bottom: 2rem;
-        .card-common{
+
+        .card-common {
             width: 100%;
-            .thumb{
+
+            .thumb {
                 position: relative;
                 display: block;
                 width: 100%;
@@ -407,22 +442,24 @@
                 padding-bottom: 66.67%;
                 overflow: hidden;
                 background: none;
-                a{
-                    img{
+
+                a {
+                    img {
                         position: absolute;
                         top: 50%;
                         left: 50%;
-                        transform: translate(-50%,-50%);
+                        transform: translate(-50%, -50%);
                         display: block;
                         max-width: 100%;
                         width: auto;
-                        height: auto!important;
+                        height: auto !important;
                         max-height: none;
                         object-fit: cover;
                     }
                 }
             }
-            h2{
+
+            h2 {
                 font-size: 1.5rem;
                 line-height: 1.5rem;
                 font-weight: 700;
@@ -432,7 +469,8 @@
                 padding: 0 1rem;
                 text-align: left;
                 margin-bottom: 1rem;
-                a{
+
+                a {
                     text-decoration: none;
                     color: $black;
                 }
@@ -440,13 +478,15 @@
         }
     }
 }
-#plantsb-five{
-    .video-wrap{
+
+#plantsb-five {
+    .video-wrap {
         margin: 30px auto;
         border: 8px solid $white;
         overflow: hidden;
-        .video-container{
-            background: rgba(0,0,0,0.5);
+
+        .video-container {
+            background: rgba(0, 0, 0, 0.5);
             position: relative;
             width: 100%;
             height: 0;
@@ -454,7 +494,8 @@
             padding-bottom: 56.25%;
             margin: auto;
             overflow: hidden;
-            iframe{
+
+            iframe {
                 display: block;
                 position: absolute;
                 top: 0;
@@ -466,11 +507,13 @@
         }
     }
 }
-#plants-last{
+
+#plants-last {
     background-color: $bg-white;
     padding: 5rem 0;
     position: relative;
-    &::before{
+
+    &::before {
         content: "Contact us";
         text-transform: uppercase;
         font-size: 100px;
@@ -482,16 +525,20 @@
         z-index: 1;
         letter-spacing: 0;
     }
-    .form-left{
-        h2{
+
+    .form-left {
+        h2 {
             font-size: 30px;
             line-height: 1.2;
             font-weight: 700;
             letter-spacing: 0;
             color: $black;
             margin-bottom: 16px;
-        };
-        p{
+        }
+
+        ;
+
+        p {
             margin: 0 0 24px 0;
             padding: 0;
             font-size: 16px;
@@ -502,14 +549,17 @@
 
         }
     }
-    .form-side{
-        form{
+
+    .form-side {
+        form {
             width: 100%;
             // border: 2px solid red;
             display: block;
-            .edit-label-input{
+
+            .edit-label-input {
                 margin-bottom: 16px;
-                label{
+
+                label {
                     display: block;
                     margin-bottom: 8px;
                     font-size: 16px;
@@ -517,7 +567,8 @@
                     line-height: 28px;
                     text-align: left;
                 }
-                input{
+
+                input {
                     color: #616161;
                     background-color: $white;
                     display: block;
@@ -533,14 +584,17 @@
                     line-height: 16px;
                     padding: 14px 24px;
                     border: 1px solid #e0e0e0;
-                    &:hover{
+
+                    &:hover {
                         border: 1px solid $black;
                     }
                 }
             }
-            .message-area{
+
+            .message-area {
                 margin-bottom: 16px;
-                label{
+
+                label {
                     display: block;
                     margin-bottom: 8px;
                     font-size: 16px;
@@ -548,7 +602,8 @@
                     line-height: 28px;
                     text-align: left;
                 }
-                textarea{
+
+                textarea {
                     height: auto;
                     display: block;
                     width: 100%;
@@ -561,20 +616,23 @@
                     background-clip: padding-box;
                     border: 1px solid #ced4da;
                     transition: 300ms ease-in-out;
-                    &:hover{
+
+                    &:hover {
                         border: 1px solid $black;
 
                     }
                 }
             }
-            .checkbox-area{
+
+            .checkbox-area {
                 display: flex;
                 align-items: flex-start;
-                .for-checkbox{
+
+                .for-checkbox {
                     padding-right: 16px;
                 }
-                
-                label{
+
+                label {
                     order: 2;
                     font-size: 13px;
                     font-weight: bold;
@@ -585,6 +643,34 @@
                 }
             }
         }
-       
+
+    }
+}
+
+@media (max-width:768px) {
+    #plantsb-two {
+        h2 {
+            &::before {
+                font-size: 100px !important;
+                letter-spacing: -6px !important;
+
+            }
+        }
+    }
+
+    #plantsb-three {
+        h2 {
+            &::before {
+                font-size: 71px !important;
+                letter-spacing: -4px !important;
+            }
+        }
+    }
+
+    #plants-last {
+        &::before {
+            top: 0 !important;
+            font-size: 50px !important;
+        }
     }
 }

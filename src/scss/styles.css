@@ -2607,6 +2607,9 @@ main #main-end a {
   text-decoration: none;
   color: #000000;
 }
+main #main-end .passage-card {
+  margin-bottom: 30px;
+}
 main #main-end .passage-card .passage-img {
   width: 100%;
   height: 100%;
@@ -3321,6 +3324,17 @@ main #main-ending button {
   text-align: center;
   margin: 0 0 24px 0;
   padding: 0;
+}
+#services-sub-two .sub-two-title ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#services-sub-two .sub-two-title ul li {
+  display: flex;
+}
+#services-sub-two .sub-two-title ul li span {
+  margin-right: 10px;
 }
 #services-sub-two .sub-two-img img {
   width: 100%;

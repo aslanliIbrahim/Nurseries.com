@@ -434,11 +434,19 @@ main {
 
             .caruesel-img-side {
                 position: relative;
-
                 img {
                     width: 100%;
                     max-width: 100%;
                     object-fit: contain;
+                }
+                &::before{
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(21, 77, 48, 0.3);
+                    position: absolute;
+                    top: 0%;
+                    left: 0%;
                 }
             }
 
@@ -584,7 +592,7 @@ main {
             }
 
             p {
-                width: 50%;
+                width: 82%;
                 @include textFont($text_align: center,
                     $margin: 0 0 24px 0,
                     $f_color: $white-a );

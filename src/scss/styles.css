@@ -2617,6 +2617,7 @@ main #main-end a {
   color: #000000;
 }
 main #main-end .passage-card {
+  width: 70%;
   margin-bottom: 30px;
 }
 main #main-end .passage-card .passage-img {
@@ -2626,8 +2627,9 @@ main #main-end .passage-card .passage-img {
      object-fit: cover;
 }
 main #main-end .passage-card .passage-img img {
-  width: 300px;
-  height: 200px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main #main-end .passage-card .passage-text {
   padding-top: 20px;
@@ -2635,6 +2637,7 @@ main #main-end .passage-card .passage-text {
 main #main-end .passage-card .passage-text h4 {
   color: #000000;
   font-weight: bold;
+  text-align: center;
 }
 main #main-end .passage-card .passage-text p {
   text-align: center;
@@ -2988,9 +2991,20 @@ main #main-heading .page {
   position: relative;
   padding: 10rem 0;
   text-align: center;
-  background: url(../img/services-image/Milis-GreenHouse.jpg) 50% 50%/cover no-repeat !important;
+  background: url(../img/main-image/slider_1.jpg) 50% 50%/cover no-repeat !important;
+}
+main #main-heading .page::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(21, 77, 48, 0.3);
+  position: absolute;
+  top: 0%;
+  left: 0%;
 }
 main #main-heading .page h1 {
+  position: relative;
+  z-index: 0;
   font-size: 60px;
   font-weight: 600;
   color: white;

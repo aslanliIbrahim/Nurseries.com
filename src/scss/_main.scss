@@ -1253,9 +1253,9 @@ main {
 
                 li {
                     @include flexible(flex,
-                        $aling: start,
+                        $aling: center,
                     );
-                    @include textFont($f_size: 24px,
+                    @include textFont($f_size: 16px,
                         $f_color: $black,
                         $text_weight: bold,
                         $padding: 5px 0);
@@ -1608,6 +1608,7 @@ footer {
             img {
                 max-width: 300px;
                 object-fit: contain;
+                filter: brightness(0) invert(1);
             }
 
             p {

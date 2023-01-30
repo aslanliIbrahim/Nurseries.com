@@ -466,7 +466,7 @@ main #main-two .two-before-container-area {
   position: relative;
 }
 main #main-two .two-before-container-area::before {
-  content: "MILIS NURSERIES";
+  content: "Zafar's Nursery";
   font-size: 150px;
   font-weight: 700;
   color: #f0f0f0;

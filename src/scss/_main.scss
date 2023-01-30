@@ -562,7 +562,7 @@ main {
             position: relative;
 
             &::before {
-                content: "MILIS NURSERIES";
+                content: "Zafar's Nursery";
                 @include textFont($f_size: 150px,
                     $text_weight: 700,
                     $f_color: #f0f0f0);
